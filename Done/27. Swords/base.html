@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/base.css">
+        <title>Swords ⚔️</title>
+    </head>
+    <body>
+        <section id="mySection">
+            <svg id="mySVG" width="300" height="300">
+                <g id="positioning" transform="translate(150,40) scale(1.75)">
+                    <g id="sword1" transform="translate(200,0) rotate(-45,0,60)">
+                        <path class="blade" d="M0,100 l-7.5,0 l0,-87.5 l7.5,-12.5 l0,100 Z" fill="silver"></path>
+                        <path class="blade" d="M0,100 l7.5,0 l0,-87.5 l-7.5,-12.5 l0,100 Z" fill="darkgray"></path>
+                        <path class="hiltTop" d="M0,100 l17.5,0 l0,5 l-35,0 l0,-5 l17.5,0 Z" fill="goldenrod" stroke="rgba(0,0,0,0.25)"></path>
+                        <g class="hiltMid">
+                            <path d="M0,100 l7,0 l-0.5,3 l-13,0 l-0.5,-3 l7,0 Z" fill="brown" transform="translate(0,4.5)"></path>
+                            <path d="M0,100 l6.5,0 l-0.5,3 l-12,0 l-0.5,-3 l6.5,0 Z" fill="burlywood" transform="translate(0,7.5)"></path>
+                            <path d="M0,100 l6,0 l-0.5,3 l-11,0 l-0.5,-3 l6,0 Z" fill="brown" transform="translate(0,10.5)"></path>
+                            <path d="M0,100 l5.5,0 l-0.5,3 l-10,0 l-0.5,-3 l5.5,0 Z" fill="burlywood" transform="translate(0,13.5)"></path>
+                            <path d="M0,100 l5,0 l-0.5,3 l-9,0 l-0.5,-3 l5,0 Z" fill="brown" transform="translate(0,16.5)"></path>
+                            <path d="M0,100 l4.5,0 l-0.5,3 l-8,0 l-0.5,-3 l4.5,0 Z" fill="burlywood" transform="translate(0,19.5)"></path>
+                            <path d="M0,100 l4,0 l-0.5,3 l-7,0 l-0.5,-3 l4,0 Z" fill="brown" transform="translate(0,22.5)"></path>
+                        </g>
+                        <ellipse class="hiltEnd" cx="0" cy="128" rx="6" ry="3" fill="goldenrod" stroke="rgba(0,0,0,0.45)" />
+                        <animateTransform attributeName="transform" type="translate" values="200,0;0,0" dur="1.25s" fill="freeze"/>
+                        <animateTransform attributeName="transform" type="rotate" values="0,0,60;-45,0,60" dur="1.25s" fill="freeze" additive="sum"/>
+
+                        <animateTransform id="slashRight" attributeName="transform" type="rotate" begin="3s" values="45,0,135;0,0,135" dur="1s" fill="freeze" additive="sum"/>
+                    </g>
+                    <g id="sword2" transform="translate(-200,0) rotate(45,0,60)">
+                        <path class="blade" d="M0,100 l-7.5,0 l0,-87.5 l7.5,-12.5 l0,100 Z" fill="silver"></path>
+                        <path class="blade" d="M0,100 l7.5,0 l0,-87.5 l-7.5,-12.5 l0,100 Z" fill="darkgray"></path>
+                        <path class="hiltTop" d="M0,100 l17.5,0 l0,5 l-35,0 l0,-5 l17.5,0 Z" fill="goldenrod" stroke="rgba(0,0,0,0.25)"></path>
+                        <g class="hiltMid">
+                            <path d="M0,100 l7,0 l-0.5,3 l-13,0 l-0.5,-3 l7,0 Z" fill="brown" transform="translate(0,4.5)"></path>
+                            <path d="M0,100 l6.5,0 l-0.5,3 l-12,0 l-0.5,-3 l6.5,0 Z" fill="burlywood" transform="translate(0,7.5)"></path>
+                            <path d="M0,100 l6,0 l-0.5,3 l-11,0 l-0.5,-3 l6,0 Z" fill="brown" transform="translate(0,10.5)"></path>
+                            <path d="M0,100 l5.5,0 l-0.5,3 l-10,0 l-0.5,-3 l5.5,0 Z" fill="burlywood" transform="translate(0,13.5)"></path>
+                            <path d="M0,100 l5,0 l-0.5,3 l-9,0 l-0.5,-3 l5,0 Z" fill="brown" transform="translate(0,16.5)"></path>
+                            <path d="M0,100 l4.5,0 l-0.5,3 l-8,0 l-0.5,-3 l4.5,0 Z" fill="burlywood" transform="translate(0,19.5)"></path>
+                            <path d="M0,100 l4,0 l-0.5,3 l-7,0 l-0.5,-3 l4,0 Z" fill="brown" transform="translate(0,22.5)"></path>
+                        </g>
+                        <ellipse class="hiltEnd" cx="0" cy="128" rx="6" ry="3" fill="goldenrod" stroke="rgba(0,0,0,0.45)" />
+                        <animateTransform attributeName="transform" type="translate" values="-200,0;0,0" dur="1.25s" fill="freeze"/>
+                        <animateTransform attributeName="transform" type="rotate" values="0,0,60;45,0,60" dur="1.25s" fill="freeze" additive="sum"/>
+
+                        <animateTransform id="slashLeft" attributeName="transform" type="rotate" begin="3s" values="-45,0,135;0,0,135" dur="1s" fill="freeze" additive="sum"/>
+                    </g>
+                </g>
+            </svg>
+        </section>
+        <div id="footer">
+            <div id="footerContainer">
+                <div id="profilePic">
+                    <a href="https://www.sololearn.com/Profile/100073"><img id="theImg" src="https://blob.sololearn.com/avatars/3f731407-f00a-4256-87bb-c1730d8630fc.jpg"/></a>
+                </div>
+                <div id="sig">
+                    <p><a href="https://www.sololearn.com/Profile/100073">Jay</a> &copy; 27/50 (2022). Follow me:&nbsp;</p>
+                </div>
+                <div id="logos">
+                    <a href="https://www.sololearn.com/Profile/100073"><img id="slImg" src="https://blob.sololearn.com/avatars/sololearn.png"/></a>
+                    <a href="https://codepen.io/JDawson"><img id="cpenImg" src="https://res.cloudinary.com/css-tricks/images/w_600,h_600,c_fill/f_auto,q_auto/v1637703540/Button-White-Large/Button-White-Large-png?_i=AA"/></a>
+                </div>
+            </div>
+        </div>
+        <script src="js/base.js"></script>
+    </body>
+</html>

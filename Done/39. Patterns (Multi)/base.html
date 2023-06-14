@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/base.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js" integrity="sha512-NxocnqsXP3zm0Xb42zqVMvjQIktKEpTIbCXXyhBPxqGZHqhcOXHs4pXI/GoZ8lE+2NJONRifuBpi9DxC58L0Lw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <title>Patterns</title>
+    </head>
+    <body>
+        <section id="mySection">
+            <div id="infoSection" class="subSection">
+                <!-- Information about the drawing -->
+                <h1>Patterns</h1>
+                <p>Patterns is a repeated decorative design which can be used in designing clothes and other sorts of items. Sometimes patterns are found in nature and can be quite powerful imagery.</p>
+                <p>Have a look at the patterns I have made below, along with their animations.</p>
+            </div>
+            <div id="selectionSection" class="subSection">
+                <!-- Select which drawing you want to see -->
+                <div>
+                    <p>Select which drawings you want to see</p><br>
+                </div>
+                <div id="selections">
+                    <label for="cssCheck">CSS</label>
+                    <input type="checkbox" id="cssCheck" checked/>
+                    <label for="svgCheck">SVG</label>
+                    <input type="checkbox" id="svgCheck" checked/>
+                    <label for="canvasCheck">Canvas</label>
+                    <input type="checkbox" id="canvasCheck" checked/>
+                    <label for="p5Check">p5</label>
+                    <input type="checkbox" id="p5Check" checked/>
+                </div>
+            </div>
+            <div id="cssSection" class="subSection">
+                <!-- The CSS Section -->
+                <div id="myCSS">
+                    <div id="placeholder">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div id="cssTitle">
+                        CSS:
+                    </div>
+                </div>
+            </div>
+            <div id="svgSection" class="subSection">
+                <!-- The SVG Section-->
+                <svg id="mysvg" width="300" height="300">
+                    <g stroke-width="15">
+                        <path class="chevron" d="M-20,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20" stroke="#3088CF" fill="none" transform="translate(0,-45)">
+                            <animate attributeName="stroke" values="#3088CF;#CF3088" dur="2s" repeatCount="indefinite"/>
+                            <animateTransform attributeName="transform" type="translate" dur="2s" additive="sum" values="0,0;0,15" repeatCount="indefinite"/>
+                        </path>
+                        <path class="chevron" d="M-20,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20" stroke="#CF3088" fill="none" transform="translate(0,-30)">
+                            <animate attributeName="stroke" values="#CF3088;#88CF30" dur="2s" repeatCount="indefinite"/>
+                            <animateTransform attributeName="transform" type="translate" dur="2s" additive="sum" values="0,0;0,15" repeatCount="indefinite"/>
+                        </path>
+                        <path class="chevron" d="M-20,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20" stroke="#88CF30" fill="none" transform="translate(0,-15)">
+                            <animate attributeName="stroke" values="#88CF30;#3088CF" dur="2s" repeatCount="indefinite"/>
+                            <animateTransform attributeName="transform" type="translate" dur="2s" additive="sum" values="0,0;0,15" repeatCount="indefinite"/>
+                        </path>
+                        <path class="chevron" d="M-20,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20" stroke="#3088CF" fill="none">
+                            <animate attributeName="stroke" values="#3088CF;#CF3088" dur="2s" repeatCount="indefinite"/>
+                            <animateTransform attributeName="transform" type="translate" dur="2s" values="0,0;0,15" repeatCount="indefinite"/>
+                        </path>
+                        <path class="chevron" d="M-20,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20" stroke="#CF3088" fill="none" transform="translate(0,15)">
+                            <animate attributeName="stroke" values="#CF3088;#88CF30" dur="2s" repeatCount="indefinite"/>
+                            <animateTransform attributeName="transform" type="translate" dur="2s" additive="sum" values="0,0;0,15" repeatCount="indefinite"/>
+                        </path>
+                        <path class="chevron" d="M-20,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20" stroke="#88CF30" fill="none" transform="translate(0,30)">
+                            <animate attributeName="stroke" values="#88CF30;#3088CF" dur="2s" repeatCount="indefinite"/>
+                            <animateTransform attributeName="transform" type="translate" dur="2s" additive="sum" values="0,0;0,15" repeatCount="indefinite"/>
+                        </path>
+                        <path class="chevron" d="M-20,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20" stroke="#3088CF" fill="none" transform="translate(0,45)">
+                            <animate attributeName="stroke" values="#3088CF;#CF3088" dur="2s" repeatCount="indefinite"/>
+                            <animateTransform attributeName="transform" type="translate" dur="2s" additive="sum" values="0,0;0,15" repeatCount="indefinite"/>
+                        </path>
+                        <path class="chevron" d="M-20,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20" stroke="#CF3088" fill="none" transform="translate(0,60)">
+                            <animate attributeName="stroke" values="#CF3088;#88CF30" dur="2s" repeatCount="indefinite"/>
+                            <animateTransform attributeName="transform" type="translate" dur="2s" additive="sum" values="0,0;0,15" repeatCount="indefinite"/>
+                        </path>
+                        <path class="chevron" d="M-20,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20" stroke="#88CF30" fill="none" transform="translate(0,75)">
+                            <animate attributeName="stroke" values="#88CF30;#3088CF" dur="2s" repeatCount="indefinite"/>
+                            <animateTransform attributeName="transform" type="translate" dur="2s" additive="sum" values="0,0;0,15" repeatCount="indefinite"/>
+                        </path>
+                        <path class="chevron" d="M-20,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20" stroke="#3088CF" fill="none" transform="translate(0,90)">
+                            <animate attributeName="stroke" values="#3088CF;#CF3088" dur="2s" repeatCount="indefinite"/>
+                            <animateTransform attributeName="transform" type="translate" dur="2s" additive="sum" values="0,0;0,15" repeatCount="indefinite"/>
+                        </path>
+                        <path class="chevron" d="M-20,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20" stroke="#CF3088" fill="none" transform="translate(0,105)">
+                            <animate attributeName="stroke" values="#CF3088;#88CF30" dur="2s" repeatCount="indefinite"/>
+                            <animateTransform attributeName="transform" type="translate" dur="2s" additive="sum" values="0,0;0,15" repeatCount="indefinite"/>
+                        </path>
+                        <path class="chevron" d="M-20,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20" stroke="#88CF30" fill="none" transform="translate(0,120)">
+                            <animate attributeName="stroke" values="#88CF30;#3088CF" dur="2s" repeatCount="indefinite"/>
+                            <animateTransform attributeName="transform" type="translate" dur="2s" additive="sum" values="0,0;0,15" repeatCount="indefinite"/>
+                        </path>
+                        <path class="chevron" d="M-20,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20" stroke="#3088CF" fill="none" transform="translate(0,135)">
+                            <animate attributeName="stroke" values="#3088CF;#CF3088" dur="2s" repeatCount="indefinite"/>
+                            <animateTransform attributeName="transform" type="translate" dur="2s" additive="sum" values="0,0;0,15" repeatCount="indefinite"/>
+                        </path>
+                        <path class="chevron" d="M-20,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20" stroke="#CF3088" fill="none" transform="translate(0,150)">
+                            <animate attributeName="stroke" values="#CF3088;#88CF30" dur="2s" repeatCount="indefinite"/>
+                            <animateTransform attributeName="transform" type="translate" dur="2s" additive="sum" values="0,0;0,15" repeatCount="indefinite"/>
+                        </path>
+                        <path class="chevron" d="M-20,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20" stroke="#88CF30" fill="none" transform="translate(0,165)">
+                            <animate attributeName="stroke" values="#88CF30;#3088CF" dur="2s" repeatCount="indefinite"/>
+                            <animateTransform attributeName="transform" type="translate" dur="2s" additive="sum" values="0,0;0,15" repeatCount="indefinite"/>
+                        </path>
+                        <path class="chevron" d="M-20,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20" stroke="#3088CF" fill="none" transform="translate(0,180)">
+                            <animate attributeName="stroke" values="#3088CF;#CF3088" dur="2s" repeatCount="indefinite"/>
+                            <animateTransform attributeName="transform" type="translate" dur="2s" additive="sum" values="0,0;0,15" repeatCount="indefinite"/>
+                        </path>
+                        <path class="chevron" d="M-20,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20" stroke="#CF3088" fill="none" transform="translate(0,195)">
+                            <animate attributeName="stroke" values="#CF3088;#88CF30" dur="2s" repeatCount="indefinite"/>
+                            <animateTransform attributeName="transform" type="translate" dur="2s" additive="sum" values="0,0;0,15" repeatCount="indefinite"/>
+                        </path>
+                        <path class="chevron" d="M-20,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20" stroke="#88CF30" fill="none" transform="translate(0,210)">
+                            <animate attributeName="stroke" values="#88CF30;#3088CF" dur="2s" repeatCount="indefinite"/>
+                            <animateTransform attributeName="transform" type="translate" dur="2s" additive="sum" values="0,0;0,15" repeatCount="indefinite"/>
+                        </path>
+                        <path class="chevron" d="M-20,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20" stroke="#3088CF" fill="none" transform="translate(0,225)">
+                            <animate attributeName="stroke" values="#3088CF;#CF3088" dur="2s" repeatCount="indefinite"/>
+                            <animateTransform attributeName="transform" type="translate" dur="2s" additive="sum" values="0,0;0,15" repeatCount="indefinite"/>
+                        </path>
+                        <path class="chevron" d="M-20,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20" stroke="#CF3088" fill="none" transform="translate(0,240)">
+                            <animate attributeName="stroke" values="#CF3088;#88CF30" dur="2s" repeatCount="indefinite"/>
+                            <animateTransform attributeName="transform" type="translate" dur="2s" additive="sum" values="0,0;0,15" repeatCount="indefinite"/>
+                        </path>
+                        <path class="chevron" d="M-20,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20" stroke="#88CF30" fill="none" transform="translate(0,255)">
+                            <animate attributeName="stroke" values="#88CF30;#3088CF" dur="2s" repeatCount="indefinite"/>
+                            <animateTransform attributeName="transform" type="translate" dur="2s" additive="sum" values="0,0;0,15" repeatCount="indefinite"/>
+                        </path>
+                        <path class="chevron" d="M-20,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20" stroke="#3088CF" fill="none" transform="translate(0,270)">
+                            <animate attributeName="stroke" values="#3088CF;#CF3088" dur="2s" repeatCount="indefinite"/>
+                            <animateTransform attributeName="transform" type="translate" dur="2s" additive="sum" values="0,0;0,15" repeatCount="indefinite"/>
+                        </path>
+                        <path class="chevron" d="M-20,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20" stroke="#CF3088" fill="none" transform="translate(0,285)">
+                            <animate attributeName="stroke" values="#CF3088;#88CF30" dur="2s" repeatCount="indefinite"/>
+                            <animateTransform attributeName="transform" type="translate" dur="2s" additive="sum" values="0,0;0,15" repeatCount="indefinite"/>
+                        </path>
+                        <path class="chevron" d="M-20,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20 l40,-20 l40,20" stroke="#88CF30" fill="none" transform="translate(0,300)">
+                            <animate attributeName="stroke" values="#88CF30;#3088CF" dur="2s" repeatCount="indefinite"/>
+                            <animateTransform attributeName="transform" type="translate" dur="2s" additive="sum" values="0,0;0,15" repeatCount="indefinite"/>
+                        </path>
+                    </g>
+                    <text font-size="20px" x="5" y="5" text-anchor="left" dominant-baseline="hanging">SVG:</text>
+                </svg>
+            </div>
+            <div id="canvasSection" class="subSection">
+                <!-- The Canvas Section -->
+                <canvas id="myCanvas" width="600" height="600">
+                    HTML Canvas is not supported with your device.
+                </canvas>
+            </div>
+            <div id="p5Section" class="subSection">
+                <!-- The p5 Section -->
+                <div id="p5Div"></div>
+            </div>
+        </section>
+        <div id="footer">
+            <div id="footerContainer">
+                <div id="profilePic">
+                    <a href="https://www.sololearn.com/Profile/100073"><img id="theImg" src="https://blob.sololearn.com/avatars/3f731407-f00a-4256-87bb-c1730d8630fc.jpg"/></a>
+                </div>
+                <div id="sig">
+                    <p><a href="https://www.sololearn.com/Profile/100073">Jay</a> &copy; 39/50 (2022). Follow me:&nbsp;</p>
+                </div>
+                <div id="logos">
+                    <a href="https://www.sololearn.com/Profile/100073"><img id="slImg" src="https://blob.sololearn.com/avatars/sololearn.png"/></a>
+                    <a href="https://codepen.io/JDawson"><img id="cpenImg" src="https://res.cloudinary.com/css-tricks/images/w_600,h_600,c_fill/f_auto,q_auto/v1637703540/Button-White-Large/Button-White-Large-png?_i=AA"/></a>
+                </div>
+            </div>
+        </div>
+        <script src="js/base.js"></script>
+    </body>
+</html>

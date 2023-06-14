@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+
+    font-family: 'Arial';
+    padding: 0;
+    margin: 0;
+    background-color: black;
+
+}
+
+#p5Section{
+
+    position: relative;
+    margin: auto;
+    width: 100%;
+
+}
+
+#p5Div{
+
+    position: relative;
+    margin: auto;
+    border: 1px solid black;
+    height: 200px;
+    width: 300px;
+
+}
+
+/* footer / sig */
+
+#footer{
+
+    position: fixed;
+    width: 100%;
+    bottom:0;
+    height: 50px;
+    background-color: rgb(10,3,109);
+    box-sizing: border-box;
+    border-top: 3px solid rgb(104, 95, 224);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gold;
+    font-weight: bold;
+
+}
+
+#footerContainer{
+
+    width: auto;
+    height: 100%;
+    display: flex;
+
+}
+
+#profilePic{
+
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+
+}
+
+#theImg{
+
+    top: calc(50% - 15px);
+    position: absolute;
+    border-radius: 50%;
+    max-width: 30px;
+
+}
+
+#sig{
+
+    font-size: 13px;
+    letter-spacing: 0.75px;
+    top: calc(50% - 15px);
+    margin-top: 3px;
+
+}
+
+#sig > p > a{
+
+    color: gold;
+    text-decoration: none;
+
+}
+
+#slImg{
+
+    top: calc(50% - 15px);
+    position: relative;
+    border-radius: 50%;
+    max-width: 30px;
+
+}
+
+#cpenImg{
+
+    top: calc(50% - 15px);
+    position: absolute;
+    border-radius: 50%;
+    max-width: 30px;
+
+}

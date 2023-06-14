@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/base.css">
+        <title>Mace</title>
+    </head>
+    <body>
+        <section id="mySection">
+            <svg id="mySVG" width="300" height="300">
+                <g transform="rotate(0,35,282.5)">
+                    <!-- Item Top (Sphere and Spikes) -->
+                    <g transform="translate(35,20)">
+                        <circle id="itemTopSphere" cx="0" cy="25" r="25" fill="grey" stroke="rgba(0,0,0,0.65)"/>
+                        <path class="spike" d="M-10,5 l10,-15 l10,15 Z" fill="grey" stroke="rgba(0,0,0,0.65)" transform="rotate(-135,0,25)"/>
+                        <path class="spike" d="M-10,5 l10,-15 l10,15 Z" fill="grey" stroke="rgba(0,0,0,0.65)" transform="rotate(-90,0,25)"/>
+                        <path class="spike" d="M-10,5 l10,-15 l10,15 Z" fill="grey" stroke="rgba(0,0,0,0.65)" transform="rotate(-45,0,25)"/>
+                        <path class="spike" d="M-10,5 l10,-15 l10,15 Z" fill="grey" stroke="rgba(0,0,0,0.65)" transform="rotate(0,0,25)"/>
+                        <path class="spike" d="M-10,5 l10,-15 l10,15 Z" fill="grey" stroke="rgba(0,0,0,0.65)" transform="rotate(45,0,25)"/>
+                        <path class="spike" d="M-10,5 l10,-15 l10,15 Z" fill="grey" stroke="rgba(0,0,0,0.65)" transform="rotate(90,0,25)"/>
+                        <path class="spike" d="M-10,5 l10,-15 l10,15 Z" fill="grey" stroke="rgba(0,0,0,0.65)" transform="rotate(135,0,25)"/>
+                        <path class="spike" d="M-10,20 l10,-15 l10,15 Z" fill="grey" stroke="rgba(0,0,0,0.65)" transform="rotate(20,0,25)"/>
+                        <path class="spike" d="M-10,25 l10,-10 l10,10 Z" fill="grey" stroke="rgba(0,0,0,0.65)" transform="rotate(140,0,25)"/>
+                        <path class="spike" d="M-10,15 l10,-7 l10,7 Z" fill="grey" stroke="rgba(0,0,0,0.65)" transform="rotate(260,0,25)"/>
+
+                        <!-- Item Middle -->
+                        <g transform="translate(0,45)">
+                            <rect id="itemMiddle" x="-8" y="0" width="16" height="120" fill="grey" stroke="rgba(0,0,0,0.65)"/>
+                            
+                            <!-- Handle Top -->
+                            <g transform="translate(0,120)">
+                                <rect id="handleTop" x="-12.5" y="0" width="25" height="5" rx="2" ry="2" fill="grey" stroke="rgba(0,0,0,0.65)"/>
+
+                                <!-- Handle Center -->
+                                <g transform="translate(0,5)">
+                                    <rect id="handleCenter" x="-10" y="0" width="20" height="80" fill="maroon" stroke="rgba(0,0,0,0.65)"/>
+
+                                    <!-- Handle End -->
+                                    <g transform="translate(0,80)">
+                                        <path id="handleEnd" d="M-15,0 l30,0 l0,5 l-10,5 l-10,0 l-10,-5 l0,-5 Z" fill="grey" stroke="rgba(0,0,0,0.65)"/>
+                                        <!-- Item End -->
+                                        <g transform="translate(0,12.5)">
+                                            <circle id="itemEnd" cx="0" cy="0" r="5" fill="grey" stroke="rgba(0,0,0,0.65)"></circle>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <animateTransform attributeName="transform" type="rotate" values="0,35,282.5;90,35,282.5;0,35,282.5;0,35,282.5" keyTimes="0;0.1;0.8;1" additive="sum" dur="3s" begin="0s" fill="freeze" repeatCount="indefinite"/>
+                </g>
+            </svg>
+        </section>
+        <div id="footer">
+            <div id="footerContainer">
+                <div id="profilePic">
+                    <a href="https://www.sololearn.com/Profile/100073"><img id="theImg" src="https://blob.sololearn.com/avatars/3f731407-f00a-4256-87bb-c1730d8630fc.jpg"/></a>
+                </div>
+                <div id="sig">
+                    <p><a href="https://www.sololearn.com/Profile/100073">Jay</a> &copy; 36/50 (2022). Follow me:&nbsp;</p>
+                </div>
+                <div id="logos">
+                    <a href="https://www.sololearn.com/Profile/100073"><img id="slImg" src="https://blob.sololearn.com/avatars/sololearn.png"/></a>
+                    <a href="https://codepen.io/JDawson"><img id="cpenImg" src="https://res.cloudinary.com/css-tricks/images/w_600,h_600,c_fill/f_auto,q_auto/v1637703540/Button-White-Large/Button-White-Large-png?_i=AA"/></a>
+                </div>
+            </div>
+        </div>
+        <script src="js/base.js"></script>
+    </body>
+</html>

@@ -1,0 +1,413 @@
+body{
+
+    font-family: 'Arial';
+    padding: 0;
+    margin: 0;
+    background-color: white;
+
+}
+
+#mySection{
+
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.subSection{
+
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* -- Information Section --*/
+
+#infoSection{
+
+    width: calc(100% - 10px);
+    padding: 5px;
+    display: block;
+
+}
+
+/* -- Selection Section --*/
+
+#selectionSection{
+
+    width: 100%;
+    text-align: center;
+    display: block;
+
+}
+
+/*-- CSS Section --*/
+
+#myCSS{
+
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+
+}
+
+#placeholder{
+
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    overflow: hidden;
+
+}
+
+#cssTitle{
+
+    left:0;
+    top: 0;
+    font-size: 20px;
+    position: relative;
+    text-align: left;
+
+}
+
+.dot{
+
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    animation: dotPop 7.5s 1s linear forwards infinite;
+
+}
+
+.dot:nth-of-type(1){
+
+    position: absolute;
+    left: 10px;
+    top: 20px;
+
+}
+
+.dot:nth-of-type(2){
+
+    position: absolute;
+    left: 90px;
+    top: 20px;
+
+}
+
+.dot:nth-of-type(3){
+
+    position: absolute;
+    left: 170px;
+    top: 20px;
+
+}
+
+.dot:nth-of-type(4){
+
+    position: absolute;
+    left: 250px;
+    top: 20px;
+
+}
+
+.dot:nth-of-type(5){
+
+    position: absolute;
+    left: 50px;
+    top: 80px;
+
+}
+
+.dot:nth-of-type(6){
+
+    position: absolute;
+    left: 130px;
+    top: 80px;
+
+}
+
+.dot:nth-of-type(7){
+
+    position: absolute;
+    left: 210px;
+    top: 80px;
+
+}
+
+.dot:nth-of-type(8){
+
+    position: absolute;
+    left: 290px;
+    top: 80px;
+
+}
+
+.dot:nth-of-type(9){
+
+    position: absolute;
+    left: -30px;
+    top: 80px;
+
+}
+
+.dot:nth-of-type(10){
+
+    position: absolute;
+    left: 10px;
+    top: 140px;
+
+}
+
+.dot:nth-of-type(11){
+
+    position: absolute;
+    left: 90px;
+    top: 140px;
+
+}
+
+.dot:nth-of-type(12){
+
+    position: absolute;
+    left: 170px;
+    top: 140px;
+
+}
+
+.dot:nth-of-type(13){
+
+    position: absolute;
+    left: 250px;
+    top: 140px;
+
+}
+
+.dot:nth-of-type(14){
+
+    position: absolute;
+    left: 50px;
+    top: 200px;
+
+}
+
+.dot:nth-of-type(15){
+
+    position: absolute;
+    left: 130px;
+    top: 200px;
+
+}
+
+.dot:nth-of-type(16){
+
+    position: absolute;
+    left: 210px;
+    top: 200px;
+
+}
+
+.dot:nth-of-type(17){
+
+    position: absolute;
+    left: 290px;
+    top: 200px;
+
+}
+
+.dot:nth-of-type(18){
+
+    position: absolute;
+    left: -30px;
+    top: 200px;
+
+}
+
+.dot:nth-of-type(19){
+
+    position: absolute;
+    left: 10px;
+    top: 260px;
+
+}
+
+.dot:nth-of-type(20){
+
+    position: absolute;
+    left: 90px;
+    top: 260px;
+
+}
+
+.dot:nth-of-type(21){
+
+    position: absolute;
+    left: 170px;
+    top: 260px;
+
+}
+
+.dot:nth-of-type(22){
+
+    position: absolute;
+    left: 250px;
+    top: 260px;
+
+}
+
+/* -- SVG */
+
+#mysvg{
+
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+
+}
+
+/* -- Canvas */
+
+#myCanvas{
+
+    width: 300px;
+    height: 300px;
+
+}
+
+/* -- p5 */
+
+#p5Section{
+
+    width: 100%;
+
+}
+
+#p5Div{
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+/* footer / sig */
+
+#footer{
+
+    position: fixed;
+    width: 100%;
+    bottom:0;
+    height: 50px;
+    background-color: rgb(10,3,109);
+    box-sizing: border-box;
+    border-top: 3px solid rgb(104, 95, 224);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gold;
+    font-weight: bold;
+
+}
+
+#footerContainer{
+
+    width: auto;
+    height: 100%;
+    display: flex;
+
+}
+
+#profilePic{
+
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+
+}
+
+#theImg{
+
+    top: calc(50% - 15px);
+    position: absolute;
+    border-radius: 50%;
+    max-width: 30px;
+
+}
+
+#sig{
+
+    font-size: 13px;
+    letter-spacing: 0.75px;
+    top: calc(50% - 15px);
+    margin-top: 3px;
+
+}
+
+#sig > p > a{
+
+    color: gold;
+    text-decoration: none;
+
+}
+
+#slImg{
+
+    top: calc(50% - 15px);
+    position: relative;
+    border-radius: 50%;
+    max-width: 30px;
+
+}
+
+#cpenImg{
+
+    top: calc(50% - 15px);
+    position: absolute;
+    border-radius: 50%;
+    max-width: 30px;
+
+}
+
+/*-- Animations --*/
+
+@keyframes dotPop{
+
+    0%{
+
+        transform: scale(0);
+
+    }
+
+    20%{
+
+        transform: scale(1);
+
+    }
+
+    60%{
+
+        transform: scale(1);
+
+    }
+
+    80%{
+
+        transform: scale(0);
+
+    }
+
+    100%{
+
+        transform: scale(0);
+
+    }
+
+}

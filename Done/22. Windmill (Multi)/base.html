@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/base.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js" integrity="sha512-NxocnqsXP3zm0Xb42zqVMvjQIktKEpTIbCXXyhBPxqGZHqhcOXHs4pXI/GoZ8lE+2NJONRifuBpi9DxC58L0Lw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <title>Windmill (Multi)</title>
+    </head>
+    <body>
+        <section id="mySection">
+            <div id="infoSection" class="subSection">
+                <!-- Information about the drawing -->
+                <p>Windmills have been used for centuries to provide a clean way of producting food and producing power. Please view these drawings :)</p>
+            </div>
+            <div id="selectionSection" class="subSection">
+                <!-- Select which drawing you want to see -->
+                <div>
+                    <p>Select which drawings you want to see</p><br>
+                </div>
+                <div id="selections">
+                    <label for="cssCheck">CSS</label>
+                    <input type="checkbox" id="cssCheck" checked/>
+                    <label for="svgCheck">SVG</label>
+                    <input type="checkbox" id="svgCheck" checked/>
+                    <label for="canvasCheck">Canvas</label>
+                    <input type="checkbox" id="canvasCheck" checked/>
+                    <label for="p5Check">p5</label>
+                    <input type="checkbox" id="p5Check" checked/>
+                </div>
+            </div>
+            <div id="cssSection" class="subSection">
+                <!-- The CSS Section -->
+                <div id="myCSS">
+                    <div id="placeholder">
+                        <div id="building">
+                            <div id="buildingBottom"></div>
+                            <div id="buildingTop"></div>
+                            <div id="buildingStripe"></div>
+                        </div>
+                        <div id="spoke">
+                            <div class="spokeBanner">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="spokeBanner">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="spokeBanner">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="spokeBanner">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cssTitle">
+                        CSS:
+                    </div>
+                </div>
+            </div>
+            <div id="svgSection" class="subSection">
+                <!-- The SVG Section-->
+                <svg id="mysvg" width="300" height="300">
+                    <path d="M150,120 L185,150 L185,230 L115,230 L115,150 Z" fill="sienna"/>
+                    <rect x="115" y="150" width="70" height="5" fill="burlywood"/>
+                    <g>
+                        <defs>
+                            <g id="spokesSVG">
+                                <rect x="150" y="147.5" width="100" height="5" fill="black"/>
+                                <g id="sailsSVG">
+                                    <line x1="169" y1="150" x2="169" y2="167.5" stroke="black"/>
+                                    <line x1="173" y1="150" x2="173" y2="167.5" stroke="black"/>
+                                    <line x1="177" y1="150" x2="177" y2="167.5" stroke="black"/>
+                                    <line x1="181" y1="150" x2="181" y2="167.5" stroke="black"/>
+                                    <line x1="185" y1="150" x2="185" y2="167.5" stroke="black"/>
+                                    <line x1="189" y1="150" x2="189" y2="167.5" stroke="black"/>
+                                    <line x1="193" y1="150" x2="193" y2="167.5" stroke="black"/>
+
+                                    <line x1="197" y1="150" x2="197" y2="167.5" stroke="black"/>
+                                    <line x1="201" y1="150" x2="201" y2="167.5" stroke="black"/>
+                                    <line x1="205" y1="150" x2="205" y2="167.5" stroke="black"/>
+                                    <line x1="209" y1="150" x2="209" y2="167.5" stroke="black"/>
+                                    <line x1="213" y1="150" x2="213" y2="167.5" stroke="black"/>
+                                    <line x1="217" y1="150" x2="217" y2="167.5" stroke="black"/>
+                                    <line x1="221" y1="150" x2="221" y2="167.5" stroke="black"/>
+
+                                    <line x1="225" y1="150" x2="225" y2="167.5" stroke="black"/>
+                                    <line x1="229" y1="150" x2="229" y2="167.5" stroke="black"/>
+                                    <line x1="233" y1="150" x2="233" y2="167.5" stroke="black"/>
+                                    <line x1="237" y1="150" x2="237" y2="167.5" stroke="black"/>
+                                    <line x1="241" y1="150" x2="241" y2="167.5" stroke="black"/>
+                                    <line x1="245" y1="150" x2="245" y2="167.5" stroke="black"/>
+                                    <line x1="249" y1="150" x2="249" y2="167.5" stroke="black"/>
+
+                                    <line x1="169" y1="157.5" x2="249" y2="157.5" stroke="black"/>
+                                    <line x1="169" y1="162.5" x2="249" y2="162.5" stroke="black"/>
+                                    <line x1="169" y1="167.5" x2="249" y2="167.5" stroke="black"/>
+                                </g>
+                            </g>
+                        </defs>
+                        <use xlink:href="#spokesSVG" x="0" y="0" transform="rotate(0,150,150)"/>
+                        <use xlink:href="#spokesSVG" x="0" y="0" transform="rotate(90,150,150)"/>
+                        <use xlink:href="#spokesSVG" x="0" y="0" transform="rotate(180,150,150)"/>
+                        <use xlink:href="#spokesSVG" x="0" y="0" transform="rotate(270,150,150)"/>
+                        <animateTransform attributeName="transform" type="rotate" values="0,150,150;360,150,150" dur="6s" repeatcount="indefinite"/>
+                    </g>
+                    <text font-size="20px" x="5" y="5" text-anchor="left" dominant-baseline="hanging">SVG:</text>
+                </svg>
+            </div>
+            <div id="canvasSection" class="subSection">
+                <!-- The Canvas Section -->
+                <canvas id="myCanvas" width="600" height="600">
+                    HTML Canvas is not supported with your device.
+                </canvas>
+            </div>
+            <div id="p5Section" class="subSection">
+                <!-- The p5 Section -->
+                <div id="p5Div"></div>
+            </div>
+        </section>
+        <div id="footer">
+            <div id="footerContainer">
+                <div id="profilePic">
+                    <a href="https://www.sololearn.com/Profile/100073"><img id="theImg" src="https://blob.sololearn.com/avatars/3f731407-f00a-4256-87bb-c1730d8630fc.jpg"/></a>
+                </div>
+                <div id="sig">
+                    <p><a href="https://www.sololearn.com/Profile/100073">Jay</a> &copy; 22/50 (2022). Follow me:&nbsp;</p>
+                </div>
+                <div id="logos">
+                    <a href="https://www.sololearn.com/Profile/100073"><img id="slImg" src="https://blob.sololearn.com/avatars/sololearn.png"/></a>
+                    <a href="https://codepen.io/JDawson"><img id="cpenImg" src="https://res.cloudinary.com/css-tricks/images/w_600,h_600,c_fill/f_auto,q_auto/v1637703540/Button-White-Large/Button-White-Large-png?_i=AA"/></a>
+                </div>
+            </div>
+        </div>
+        <script src="js/base.js"></script>
+    </body>
+</html>

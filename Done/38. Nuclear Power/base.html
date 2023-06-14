@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/base.css">
+        <title>Nuclear Power</title>
+    </head>
+    <body>
+        <section id="mySection">
+            <svg id="mySVG" width="300" height="300">
+                <!-- Background -->
+                <rect id="topBg" width="100%" height="55%" x="0" y="0" fill="skyblue"/>
+                <rect id="bottomBg" width="100%" height="45%" x="0" y="55%" fill="green"/>
+
+                <!-- River -->
+                <rect transform="rotate(20,0,170)" x="0" y="170" height="30" width="350" fill="steelblue"/>
+
+                <!-- Reactor -->
+                <path transform="translate(20,140)" d="M0,0 a15,15 1,1,1 30,0 v30 h-30 v-30 Z" fill="grey" stroke="black"/>
+                <rect transform="translate(27.5,150)" x="0" y="0" width="15" height="12.5" fill="orangered" stroke="black">
+                    <animate attributeName="fill" values="yellow;gold;orange;orangered;red;firebrick;maroon" repeatCount="indefinite" dur="10s"/>
+                </rect>
+
+                <!-- Engine Room -->
+                <g stroke="black">
+                    <rect transform="translate(75,115)" x="0" y="0" width="4" height="20" rx="3" ry="3" fill="grey"/>
+                    <rect transform="translate(82,115)" x="0" y="0" width="4" height="20" rx="3" ry="3" fill="grey"/>
+                    <rect transform="translate(89,115)" x="0" y="0" width="4" height="20" rx="3" ry="3" fill="grey"/>
+                </g>
+                <rect transform="translate(70,130)" x="0" y="0" width="30" height="40" fill="black"/>
+                <path transform="translate(75,152.5) scale(1.1)" d="M0,0 l10,-10 l-3,7 l10,0 l-10,10 l3,-7 Z" fill="yellow">
+                    <animate attributeName="fill" values="white;yellow;gold;yellow;white" repeatCount="indefinite" dur="10s"/>
+                </path>
+
+                <g stroke="black" transform="translate(2,0)">
+                    <line x1="75" y1="115" x2="215" y2="150"/>
+                    <line x1="82" y1="115" x2="215" y2="145"/>
+                    <line x1="89" y1="115" x2="215" y2="140"/>
+                </g>
+
+                <!-- Steam -->
+                <g fill="rgba(255,255,255,1)">
+                    <circle cx="150" cy="115" r="5">
+                        <animateTransform attributeName="transform" type="translate" dur="2s" begin="0s" values="0,0;40,-40" repeatCount="indefinite" />
+                        <animate attributeName="fill" values="rgba(255,255,255,1);rgba(255,255,255,0.1)" begin="0s" dur="2s" repeatcount="indefinite"/>
+                    </circle>
+                    <circle cx="145" cy="115" r="5">
+                        <animateTransform attributeName="transform" type="translate" dur="2s" begin="0.1s" values="0,0;40,-40" repeatCount="indefinite" />
+                        <animate attributeName="fill" values="rgba(255,255,255,1);rgba(255,255,255,0.1)" begin="0.1s" dur="2s" repeatcount="indefinite"/>
+                    </circle>
+                    <circle cx="155" cy="115" r="5">
+                        <animateTransform attributeName="transform" type="translate" dur="2s" begin="0.2s" values="0,0;40,-40" repeatCount="indefinite" />
+                        <animate attributeName="fill" values="rgba(255,255,255,1);rgba(255,255,255,0.1)" begin="0.2s" dur="2s" repeatcount="indefinite"/>
+                    </circle>
+                    <circle cx="140" cy="115" r="5">
+                        <animateTransform attributeName="transform" type="translate" dur="2s" begin="0.3s" values="0,0;40,-40" repeatCount="indefinite" />
+                        <animate attributeName="fill" values="rgba(255,255,255,1);rgba(255,255,255,0.1)" begin="0.3s" dur="2s" repeatcount="indefinite"/>
+                    </circle>
+                    <circle cx="160" cy="115" r="5">
+                        <animateTransform attributeName="transform" type="translate" dur="2s" begin="0.4s" values="0,0;40,-40" repeatCount="indefinite" />
+                        <animate attributeName="fill" values="rgba(255,255,255,1);rgba(255,255,255,0.1)" begin="0.4s" dur="2s" repeatcount="indefinite"/>
+                    </circle>
+                    <circle cx="152.5" cy="115" r="5">
+                        <animateTransform attributeName="transform" type="translate" dur="2s" begin="0.5s" values="0,0;40,-40" repeatCount="indefinite" />
+                        <animate attributeName="fill" values="rgba(255,255,255,1);rgba(255,255,255,0.1)" begin="0.5s" dur="2s" repeatcount="indefinite"/>
+                    </circle>
+                    <circle cx="147.5" cy="115" r="5">
+                        <animateTransform attributeName="transform" type="translate" dur="2s" begin="0.6s" values="0,0;40,-40" repeatCount="indefinite" />
+                        <animate attributeName="fill" values="rgba(255,255,255,1);rgba(255,255,255,0.1)" begin="0.6s" dur="2s" repeatcount="indefinite"/>
+                    </circle>
+                    <circle cx="157.5" cy="115" r="5">
+                        <animateTransform attributeName="transform" type="translate" dur="2s" begin="0.7s" values="0,0;40,-40" repeatCount="indefinite" />
+                        <animate attributeName="fill" values="rgba(255,255,255,1);rgba(255,255,255,0.1)" begin="0.7s" dur="2s" repeatcount="indefinite"/>
+                    </circle>
+                    <circle cx="142.5" cy="115" r="5">
+                        <animateTransform attributeName="transform" type="translate" dur="2s" begin="0.8s" values="0,0;40,-40" repeatCount="indefinite" />
+                        <animate attributeName="fill" values="rgba(255,255,255,1);rgba(255,255,255,0.1)" begin="0.8s" dur="2s" repeatcount="indefinite"/>
+                    </circle>
+                    <circle cx="137.5" cy="115" r="5">
+                        <animateTransform attributeName="transform" type="translate" dur="2s" begin="0.9s" values="0,0;40,-40" repeatCount="indefinite" />
+                        <animate attributeName="fill" values="rgba(255,255,255,1);rgba(255,255,255,0.1)" begin="0.9s" dur="2s" repeatcount="indefinite"/>
+                    </circle>
+                    <circle cx="150" cy="115" r="5">
+                        <animateTransform attributeName="transform" type="translate" dur="2s" begin="1s" values="0,0;40,-40" repeatCount="indefinite" />
+                        <animate attributeName="fill" values="rgba(255,255,255,1);rgba(255,255,255,0.1)" begin="1s" dur="2s" repeatcount="indefinite"/>
+                    </circle>
+                    <circle cx="145" cy="115" r="5">
+                        <animateTransform attributeName="transform" type="translate" dur="2s" begin="1.1s" values="0,0;40,-40" repeatCount="indefinite" />
+                        <animate attributeName="fill" values="rgba(255,255,255,1);rgba(255,255,255,0.1)" begin="1.1s" dur="2s" repeatcount="indefinite"/>
+                    </circle>
+                    <circle cx="155" cy="115" r="5">
+                        <animateTransform attributeName="transform" type="translate" dur="2s" begin="1.2s" values="0,0;40,-40" repeatCount="indefinite" />
+                        <animate attributeName="fill" values="rgba(255,255,255,1);rgba(255,255,255,0.1)" begin="1.2s" dur="2s" repeatcount="indefinite"/>
+                    </circle>
+                    <circle cx="140" cy="115" r="5">
+                        <animateTransform attributeName="transform" type="translate" dur="2s" begin="1.3s" values="0,0;40,-40" repeatCount="indefinite" />
+                        <animate attributeName="fill" values="rgba(255,255,255,1);rgba(255,255,255,0.1)" begin="1.3s" dur="2s" repeatcount="indefinite"/>
+                    </circle>
+                    <circle cx="160" cy="115" r="5">
+                        <animateTransform attributeName="transform" type="translate" dur="2s" begin="1.4s" values="0,0;40,-40" repeatCount="indefinite" />
+                        <animate attributeName="fill" values="rgba(255,255,255,1);rgba(255,255,255,0.1)" begin="1.4s" dur="2s" repeatcount="indefinite"/>
+                    </circle>
+                    <circle cx="152.5" cy="115" r="5">
+                        <animateTransform attributeName="transform" type="translate" dur="2s" begin="1.5s" values="0,0;40,-40" repeatCount="indefinite" />
+                        <animate attributeName="fill" values="rgba(255,255,255,1);rgba(255,255,255,0.1)" begin="1.5s" dur="2s" repeatcount="indefinite"/>
+                    </circle>
+                    <circle cx="147.5" cy="115" r="5">
+                        <animateTransform attributeName="transform" type="translate" dur="2s" begin="1.6s" values="0,0;40,-40" repeatCount="indefinite" />
+                        <animate attributeName="fill" values="rgba(255,255,255,1);rgba(255,255,255,0.1)" begin="1.6s" dur="2s" repeatcount="indefinite"/>
+                    </circle>
+                    <circle cx="157.5" cy="115" r="5">
+                        <animateTransform attributeName="transform" type="translate" dur="2s" begin="1.7s" values="0,0;40,-40" repeatCount="indefinite" />
+                        <animate attributeName="fill" values="rgba(255,255,255,1);rgba(255,255,255,0.1)" begin="1.7s" dur="2s" repeatcount="indefinite"/>
+                    </circle>
+                    <circle cx="142.5" cy="115" r="5">
+                        <animateTransform attributeName="transform" type="translate" dur="2s" begin="1.8s" values="0,0;40,-40" repeatCount="indefinite" />
+                        <animate attributeName="fill" values="rgba(255,255,255,1);rgba(255,255,255,0.1)" begin="1.8s" dur="2s" repeatcount="indefinite"/>
+                    </circle>
+                    <circle cx="137.5" cy="115" r="5">
+                        <animateTransform attributeName="transform" type="translate" dur="2s" begin="1.9s" values="0,0;40,-40" repeatCount="indefinite" />
+                        <animate attributeName="fill" values="rgba(255,255,255,1);rgba(255,255,255,0.1)" begin="1.9s" dur="2s" repeatcount="indefinite"/>
+                    </circle>
+                </g>
+                
+                <!-- Power Plant(s) -->
+                <path d="M-20,0 l40,0 l0,20 q0,20 20,40 l-80,0 q20,-20 20,-40 l0,-20 Z" stroke="black" fill="grey" transform="translate(150,110)"/>
+                <!-- Atomic Symbol(s) -->
+                <g fill="none" stroke="black" transform="translate(150,150)">
+                    <ellipse cx="0" cy="0" rx="14" ry="4"/>
+                    <ellipse cx="0" cy="0" rx="14" ry="4" transform="rotate(120,0,0)"/>
+                    <ellipse cx="0" cy="0" rx="14" ry="4" transform="rotate(240,0,0)"/>
+                    <circle cx="0" cy="0" r="2" fill="black" />
+                </g>
+                <g fill="none" stroke="black" transform="translate(150,150)">
+                    <ellipse cx="0" cy="0" rx="14" ry="4"/>
+                    <ellipse cx="0" cy="0" rx="14" ry="4" transform="rotate(120,0,0)"/>
+                    <ellipse cx="0" cy="0" rx="14" ry="4" transform="rotate(240,0,0)"/>
+                    <circle cx="0" cy="0" r="2" fill="black" />
+                </g>
+
+                <!-- Connectors -->
+                <g transform="translate(47.5,150)" stroke-width="2">
+                    <line x1="0" y1="0" x2="25" y2="0" stroke="black"/>
+                    <line x1="0" y1="8" x2="25" y2="8" stroke="black"/>
+                    <rect x="0" y="0" width="25" height="8" fill="grey"/>
+                </g>
+
+                <g transform="translate(97.5,150)" stroke-width="2">
+                    <line x1="0" y1="0" x2="30" y2="0" stroke="black"/>
+                    <line x1="0" y1="8" x2="30" y2="8" stroke="black"/>
+                    <rect x="0" y="0" width="30" height="8" fill="grey"/>
+                </g>
+
+                <!-- Transformer -->
+                <g transform="translate(210,130)">
+                    <rect x="0" y="0" width="30" height="40" fill="grey" stroke="black"/>
+                    <rect x="2.5" y="5" width="10" height="15" fill="black"/>
+                    <rect x="17.5" y="5" width="10" height="15" fill="black"/>
+                    <rect x="2.5" y="25" width="10" height="15" fill="black"/>
+                    <rect x="17.5" y="25" width="10" height="15" fill="black"/>
+                </g>
+
+                <!-- Wire -->
+                <line x1="240" y1="165" x2="300" y2="165" stroke="black" stroke-width="3"/>
+
+                <!-- Pulse -->
+                <circle cx="240" cy="165" r="1.5" fill="yellow">
+                    <animate attributeName="cx" values="240;325" dur="1.5s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="240" cy="165" r="1.5" fill="yellow">
+                    <animate attributeName="cx" values="240;325" begin="0.1s" dur="1.5s" repeatCount="indefinite"/>
+                </circle>
+                
+            </svg>
+        </section>
+        <div id="footer">
+            <div id="footerContainer">
+                <div id="profilePic">
+                    <a href="https://www.sololearn.com/Profile/100073"><img id="theImg" src="https://blob.sololearn.com/avatars/3f731407-f00a-4256-87bb-c1730d8630fc.jpg"/></a>
+                </div>
+                <div id="sig">
+                    <p><a href="https://www.sololearn.com/Profile/100073">Jay</a> &copy; 38/50 (2022). Follow me:&nbsp;</p>
+                </div>
+                <div id="logos">
+                    <a href="https://www.sololearn.com/Profile/100073"><img id="slImg" src="https://blob.sololearn.com/avatars/sololearn.png"/></a>
+                    <a href="https://codepen.io/JDawson"><img id="cpenImg" src="https://res.cloudinary.com/css-tricks/images/w_600,h_600,c_fill/f_auto,q_auto/v1637703540/Button-White-Large/Button-White-Large-png?_i=AA"/></a>
+                </div>
+            </div>
+        </div>
+        <script src="js/base.js"></script>
+    </body>
+</html>

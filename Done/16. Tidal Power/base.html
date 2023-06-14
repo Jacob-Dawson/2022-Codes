@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/base.css">
+        <title>Tidal Power</title>
+    </head>
+    <body>
+        <section id="mySection">
+            <svg id="mySVG" width="300" height="300">
+                <rect id="bg" x="0" y="0" width="300" height="300" fill="rgb(155, 246, 230)"></rect>
+                <g id="waves" transform="translate(0,20)">
+                    <path d="M-20,75 c8,-8 12,-8 20,0 s20,8 20,0 l0,0 c8,-8 12,-8 20,0 s20,8 20,0 l0,0 c8,-8 12,-8 20,0 s20,8 20,0 l0,0 c8,-8 12,-8 20,0 s20,8 20,0 l0,0 c8,-8 12,-8 20,0 s20,8 20,0 l0,0 c8,-8 12,-8 20,0 s20,8 20,0 l0,0 c8,-8 12,-8 20,0 s20,8 20,0 l0,0 c8,-8 12,-8 20,0 s20,8 20,0 l0,0 c8,-8 12,-8 20,0 s20,8 20,0 l0,0 c8,-8 12,-8 20,0 s20,8 20,0 l0,0 c8,-8 12,-8 20,0 s20,8 20,0 l0,0 c8,-8 12,-8 20,0 s20,8 20,0 l0,300 l-400,0 Z" fill="rgb(110,180,235)">
+                        <animateTransform id="waveAni" begin="0s" dur="10s" attributeName="transform" type="translate" values="0,0;0,5;0,5;0,0;0,-5;0,-5;0,0" repeatCount="indefinite"/>
+                    </path>
+                    <path d="M-40,80 c8,-8 12,-8 20,0 s20,8 20,0 l0,0 c8,-8 12,-8 20,0 s20,8 20,0 l0,0 c8,-8 12,-8 20,0 s20,8 20,0 l0,0 c8,-8 12,-8 20,0 s20,8 20,0 l0,0 c8,-8 12,-8 20,0 s20,8 20,0 l0,0 c8,-8 12,-8 20,0 s20,8 20,0 l0,0 c8,-8 12,-8 20,0 s20,8 20,0 l0,0 c8,-8 12,-8 20,0 s20,8 20,0 l0,0 c8,-8 12,-8 20,0 s20,8 20,0 l0,0 c8,-8 12,-8 20,0 s20,8 20,0 l0,0 c8,-8 12,-8 20,0 s20,8 20,0 l0,0 c8,-8 12,-8 20,0 s20,8 20,0 l0,300 l-400,0 Z" fill="rgb(120,190,235)">
+                        <animateTransform id="waveAni" begin="0s" dur="10s" attributeName="transform" type="translate" values="0,0;80,5;80,5;0,0;-80,-5;-80,-5;0,0" repeatCount="indefinite"/>
+                    </path>
+                    
+                </g>
+                <g id="ground">
+                    <rect x="0" y="225" width="300" height="75" fill="rgb(225, 193, 110)"></rect>
+                    <path id="continentalShelf" d="M0,80 l40,0 c20,0 40,20 40,120 c0,-50 -10,50 100,120 l-180,0 Z" fill="rgb(200,170,90)"></path>
+                </g>
+                <g id="platform">
+                    <g id="plat1" transform="translate(170,100)">
+                        <g class="pillar" fill="grey" transform="translate(15,0)">
+                            <rect x="0" y="0" width="15" height="150"></rect>
+                        </g>
+                        <g class="branch" transform="translate(30,75)">
+                            <path d="M0,0 l40,15 l0,5 l-40,-10 Z" fill="grey"></path>
+                            <g class="turbine" fill="white" transform="translate(40,17.5)">
+                                <path d="M-2.5,0 l2,-30 l1,0 l2,30 Z"></path>
+                                <path d="M-2.5,0 l2,-30 l1,0 l2,30 Z" transform="rotate(120,0,0)"></path>
+                                <path d="M-2.5,0 l2,-30 l1,0 l2,30 Z" transform="rotate(240,0,0)"></path>
+                                <g class="turbineCircle" fill="black">
+                                    <circle cx="0" cy="0" r="2.5"></circle>
+                                </g>
+                                <animateTransform attributeName="transform" type="rotate" dur="10s" values="0,0,0;360,0,0;360,0,0;0,0,0;-360,0,0;-360,0,0;0,0,0;" begin="waveAni.begin+0.2s" repeatCount="indefinite" additive="sum"></animateTransform>
+                            </g>
+                        </g>
+                        <g class="branch" transform="translate(15,75)">
+                            <path d="M0,0 l0,10 l-40,10 l0,-5 Z" fill="grey"></path>
+                            <g class="tubrine" fill="white" transform="translate(-40,17.5)">
+                                <path d="M-2.5,0 l2,-30 l1,0 l2,30 Z"></path>
+                                <path d="M-2.5,0 l2,-30 l1,0 l2,30 Z" transform="rotate(120,0,0)"></path>
+                                <path d="M-2.5,0 l2,-30 l1,0 l2,30 Z" transform="rotate(240,0,0)"></path>
+                                <g class="turbineCircle" fill="black">
+                                    <circle cx="0" cy="0" r="2.5"></circle>
+                                </g>
+                                <animateTransform attributeName="transform" type="rotate" dur="10s" values="0,0,0;360,0,0;360,0,0;0,0,0;-360,0,0;-360,0,0;0,0,0;" begin="waveAni.begin+0.2s" repeatCount="indefinite" additive="sum"></animateTransform>
+                            </g>
+                        </g>
+                        <g class="pillarTop" transform="translate(0,15)" fill="red">
+                            <path d="M0,0 l15,-15 l15,0 l15,15 l-15,15 l-15,0 Z"></path>
+                            <path stroke-width="3" d="M0,0 l45,0" stroke="white"></path>
+                            <g class="antennae" transform="translate(15,-15)" stroke="grey" fill="none" stroke-width="2">
+                                <path d="M2.5,0 l0,-15"></path>
+                                <path d="M12.5,0 l0,-10"></path>
+                            </g>
+                        </g>
+                        <g class="pillarBottom" transform="translate(15,150)">
+                            <path d="M-5,0 l25,0 l0,10 l-25,0 Z" fill="rgb(210,210,210)"></path>
+                            <path d="M-2.5,10 l30,0 l15,10 l-70,0 l15,-10 Z" fill="rgb(150,150,150)"></path>
+                            <path d="M-42.5,20 l100,0 l0,10 l-100,0 Z" fill="rgb(75,75,75)"></path>
+                        </g>
+                        
+                    </g>
+                </g>
+                <g id="wire">
+                    <path d="M192.5,280 l0,10 l-150,0 l0,-210 l-50,0" stroke-width="3" fill="none" stroke="black"></path>
+                    <circle r="1.5" fill="yellow">
+                        <animateMotion dur="5s" repeatCount="indefinite" path="M192.5,280 l0,10 l-150,0 l0,-210 l-50,0" />
+                    </circle>
+                    <circle r="1.5" fill="yellow">
+                        <animateMotion dur="5s" begin="0.15s" repeatCount="indefinite" path="M192.5,280 l0,10 l-150,0 l0,-210 l-50,0" />
+                    </circle>
+                </g>
+            </svg>
+        </section>
+        <div id="footer">
+            <div id="footerContainer">
+                <div id="profilePic">
+                    <a href="https://www.sololearn.com/Profile/100073"><img id="theImg" src="https://blob.sololearn.com/avatars/3f731407-f00a-4256-87bb-c1730d8630fc.jpg"/></a>
+                </div>
+                <div id="sig">
+                    <p><a href="https://www.sololearn.com/Profile/100073">Jay</a> &copy; 16/50 (2022). Follow me:&nbsp;</p>
+                </div>
+                <div id="logos">
+                    <a href="https://www.sololearn.com/Profile/100073"><img id="slImg" src="https://blob.sololearn.com/avatars/sololearn.png"/></a>
+                    <a href="https://codepen.io/JDawson"><img id="cpenImg" src="https://res.cloudinary.com/css-tricks/images/w_600,h_600,c_fill/f_auto,q_auto/v1637703540/Button-White-Large/Button-White-Large-png?_i=AA"/></a>
+                </div>
+            </div>
+        </div>
+        <script src="js/base.js"></script>
+    </body>
+</html>

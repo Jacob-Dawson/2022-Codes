@@ -1,0 +1,458 @@
+@import url('your url here');
+
+body{
+
+    font-family: 'Arial';
+    padding: 0;
+    margin: 0;
+    background-color: white;
+
+}
+
+section{
+
+    width: 100%;
+    height: calc(100vh - 50px);
+
+}
+
+#placeholder{
+
+    width: 100%;
+    height: 100%;
+    background-color: forestgreen;
+
+}
+
+#reservoir{
+
+    background-color: skyblue;
+    position: absolute;
+    width: 156px;
+    height: 103px;
+    left: calc(50% - 78px);
+    top: 17px;
+    border-radius: 50%;
+    transform: rotateX(60deg);
+    transform-origin: 50% 0%;
+    border: 3px solid grey;
+    box-sizing: border-box;
+
+}
+
+#riverTop{
+
+    background-color: skyblue;
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    top: 40px;
+    left: calc(50% - 75px);
+
+}
+
+#river{
+
+    background-color: skyblue;
+    position: absolute;
+    width: 150px;
+    height: calc(100% - 100px);
+    top: 100px;
+    left: calc(50% - 75px);
+
+}
+
+#door{
+
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    left: calc(50% - 75px);
+    top: 70px;
+    background-color: gray;
+    animation: openDoorAni 8s forwards linear infinite;
+
+}
+
+#damStructure{
+
+    background-color: grey;
+    position: absolute;
+    width: 170px;
+    height: 50px;
+    top: 70px;
+    left: calc(50% - 85px);
+
+}
+
+.dam{
+
+    position: absolute;
+    width: 10px;
+    height: 40px;
+    background-color: skyblue;
+
+}
+
+#damSide1{
+
+    width: 15px;
+    height: 120px;
+    background-color: gray;
+    position: absolute;
+    left: calc(50% - 90px);
+    top: 70px;
+
+}
+
+#damSide2{
+
+    width: 15px;
+    height: 120px;
+    background-color: gray;
+    position: absolute;
+    left: calc(50% + 75px);
+    top: 70px;
+
+}
+
+#transformer{
+
+    width: 35px;
+    height: 35px;
+    background-color: darkgray;
+    left: calc(50% - 125px);
+    top: 70px;
+    position: absolute;
+
+}
+
+#wire{
+
+    position: absolute;
+    width: calc(50% - 125px);
+    height: 3px;
+    top: 95px;
+    background-color: black;
+
+}
+
+.elecPulse{
+
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: yellow;
+
+}
+
+.elecPulse:nth-of-type(1){
+
+    left: 0;
+    animation: pulseAni 1.5s linear forwards infinite;
+    
+}
+
+.elecPulse:nth-of-type(2){
+
+    left: 0;
+    animation: pulseAni 1.5s 0.15s linear forwards infinite;
+    
+}
+
+.dam:nth-of-type(1){
+
+    top: 10px;
+    left: 10px;
+
+}
+
+.dam:nth-of-type(2){
+
+    top: 10px;
+    left: 30px;
+
+}
+
+.dam:nth-of-type(3){
+
+    top: 10px;
+    left: 50px;
+
+}
+
+.dam:nth-of-type(4){
+
+    top: 10px;
+    left: 70px;
+
+}
+
+.dam:nth-of-type(5){
+
+    top: 10px;
+    left: 90px;
+
+}
+
+.dam:nth-of-type(6){
+
+    top: 10px;
+    left: 110px;
+
+}
+
+.dam:nth-of-type(7){
+
+    top: 10px;
+    left: 130px;
+
+}
+
+.dam:nth-of-type(8){
+
+    top: 10px;
+    left: 150px;
+
+}
+
+.waves{
+
+    position: absolute;
+    width: 3px;
+    height: 7.5px;
+    background-color: azure;
+    opacity: 0.5;
+
+}
+
+.waves:nth-of-type(1){
+
+    top: 0%;
+    left: calc(50% - 71.5px);
+    animation: riverFlow 2s linear forwards infinite;
+
+}
+
+.waves:nth-of-type(2){
+
+    top: 0%;
+    left: calc(50% - 51.5px);
+    animation: riverFlow 2s 0.5s linear forwards infinite;
+
+}
+
+.waves:nth-of-type(3){
+
+    top: 0%;
+    left: calc(50% - 31.5px);
+    animation: riverFlow 2s 0.75s linear forwards infinite;
+
+}
+
+.waves:nth-of-type(4){
+
+    top: 0%;
+    left: calc(50% - 11.5px);
+    animation: riverFlow 2s 0.25s linear forwards infinite;
+
+}
+
+.waves:nth-of-type(5){
+
+    top: 0%;
+    left: calc(50% + 11.5px);
+    animation: riverFlow 2s 0.875s linear forwards infinite;
+
+}
+
+.waves:nth-of-type(6){
+
+    top: 0%;
+    left: calc(50% + 31.5px);
+    animation: riverFlow 2s 0.375s linear forwards infinite;
+
+}
+
+.waves:nth-of-type(7){
+
+    top: 0%;
+    left: calc(50% + 51.5px);
+    animation: riverFlow 2s 0.125s linear forwards infinite;
+
+}
+
+.waves:nth-of-type(8){
+
+    top: 0%;
+    left: calc(50% + 71.5px);
+    animation: riverFlow 2s 0.625s linear forwards infinite;
+
+}
+
+/* animations */
+
+@keyframes openDoorAni{
+
+    0%{
+
+        height: 50px;
+
+    }
+
+    25%{
+
+        height: 0px;
+
+    }
+
+    50%{
+
+        height: 0px;
+
+    }
+
+    75%{
+
+        height: 50px;
+
+    }
+
+    100%{
+
+        height: 50px;
+
+    }
+}
+
+@keyframes riverFlow {
+
+    0%{
+
+        top: 10%;
+
+    }
+
+    100%{
+
+        top: calc(100% - 50px);
+
+    }
+    
+}
+
+@keyframes pulseAni {
+
+    0%{
+
+        left: 100%;
+        opacity: 1;
+
+    }
+
+    25%{
+
+        opacity: 0.65;
+
+    }
+
+    50%{
+
+        opacity: 1;
+
+    }
+
+    75%{
+
+        opacity: 0.65;
+
+    }
+
+    100%{
+
+        left: 0%;
+        opacity: 1;
+
+    }
+    
+}
+
+/* footer / sig */
+
+#footer{
+
+    position: fixed;
+    width: 100%;
+    bottom:0;
+    height: 50px;
+    background-color: rgb(10,3,109);
+    box-sizing: border-box;
+    border-top: 3px solid rgb(104, 95, 224);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gold;
+    font-weight: bold;
+
+}
+
+#footerContainer{
+
+    width: auto;
+    height: 100%;
+    display: flex;
+
+}
+
+#profilePic{
+
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+
+}
+
+#theImg{
+
+    top: calc(50% - 15px);
+    position: absolute;
+    border-radius: 50%;
+    max-width: 30px;
+
+}
+
+#sig{
+
+    font-size: 13px;
+    letter-spacing: 0.75px;
+    top: calc(50% - 15px);
+    margin-top: 3px;
+
+}
+
+#sig > p > a{
+
+    color: gold;
+    text-decoration: none;
+
+}
+
+#slImg{
+
+    top: calc(50% - 15px);
+    position: relative;
+    border-radius: 50%;
+    max-width: 30px;
+
+}
+
+#cpenImg{
+
+    top: calc(50% - 15px);
+    position: absolute;
+    border-radius: 50%;
+    max-width: 30px;
+
+}

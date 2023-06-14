@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/base.css">
+        <title>Moon Phases</title>
+    </head>
+    <body>
+        <section id="mySection">
+            <svg id="mySVG" width="300" height="300">
+                <!-- Full ani: 12s -->
+                <g transform="translate(0,-30) rotate(-0,150,150)">
+                    <circle cx="150" cy="150" r="100" stroke="black" fill="gray"/>
+                    <clipPath id="myClip">
+                        <circle id="clippedMoon" cx="150" cy="150" r="100" fill="black"/>
+                    </clipPath>
+                    <path clip-path="url(#myClip)" d="M150,50 a100,100 0 1 1 0,200 Z" fill="black">
+                        <animate id="ani0" attributeName="fill" values="black;rgb(230, 236, 146)" keyTimes="0;1" begin="6s;ani0.begin+12s" dur="0.001s" fill="freeze"/>
+                        <animate id="ani8" attributeName="fill" values="rgb(230, 236, 146);black" keyTimes="0;1" begin="12s;ani8.begin+12s" dur="0.001s" fill="freeze"/>
+                    </path>
+                    <path clip-path="url(#myClip)" d="M150,50 a100,100 0 1 1 0,200 Z" fill="rgb(230, 236, 146)" transform="rotate(180,150,150)">
+                        <animate id="ani1" attributeName="fill" values="rgb(230, 236, 146);black;" keyTimes="0;1" begin="9s;ani1.begin+12s" dur="0.001s" fill="freeze"/>
+                        <animate id="ani9" attributeName="fill" values="black;rgb(230, 236, 146)" keyTimes="0;1" begin="15s;ani9.begin+12s" dur="0.001s" fill="freeze"/>
+                    </path>
+                    <path clip-path="url(#myClip)" d="M150,50 a100,100 0 1 1 0,200 Z" fill="rgb(230, 236, 146)">
+                        <!-- 1st half black ani -->
+                        <animate id="ani2" attributeName="d" values="M150,50 a100,100 0 1 1 0,200 Z;M150,50 a0,100 0 1 1 0,200 Z;" begin="0s;ani3.end;" dur="3s" fill="freeze"/>
+
+                        <animate id="ani4" attributeName="fill" begin="6s;ani4.begin+12s" values="rgb(230, 236, 146);black" keyTimes="0;1" dur="0.001s" fill="freeze" repeatCount="0"/>
+
+                        <animate id="ani6" attributeName="fill" begin="12s;ani6.begin+12s" values="black;rgb(230, 236, 146)" keyTimes="0;1" dur="0.001s" fill="freeze" repeatCount="0"/>
+                    </path>
+                    <path clip-path="url(#myClip)" d="M150,250 a0,100 0 1 1 0,-200 Z" fill="black">
+                        <!-- 2nd half black ani -->
+                        <animate id="ani3" attributeName="d" begin="ani2.end" values="M150,250 a0,100 0 1 1 0,-200 Z;M150,250 a100,100 0 1 1 0,-200 Z;" dur="3s" fill="freeze"/>
+
+                        <animate id="ani5" begin="9s;ani5.begin+12s" attributeName="fill" values="black;rgb(230, 236, 146)" keyTimes="0;1" dur="0.001s" fill="freeze" repeatCount="0"/>
+
+                        <animate id="ani7" begin="15s;ani7.begin+12s" attributeName="fill" values="rgb(230, 236, 146);black" keyTimes="0;1" dur="0.001s" fill="freeze" repeatCount="0"/>
+                    </path>
+                </g>
+                <g transform="translate(0,250)" fill="white" font-size="36px" stroke-width="9px">
+                    <text x="150" y="0" text-anchor="middle" dominant-baseline="middle" opacity="1">Full Moon
+                        <animate id="text1" attributeName="opacity" values="0;1;1;0" dur="0.75s;" fill="freeze"/>
+                    </text>
+                    <text x="150" y="0" text-anchor="middle" dominant-baseline="middle" opacity="0">Waning Gibbous
+                        <animate id="text2" attributeName="opacity" values="0;1;1;0" begin="0.75s;text1Alt.begin+1.5s" dur="1.5s" fill="freeze"/>
+                    </text>
+                    <text x="150" y="0" text-anchor="middle" dominant-baseline="middle" opacity="0">Waning Half
+                        <animate id="text3" attributeName="opacity" values="0;1;1;0" begin="2.25s;text1Alt.begin+3s" dur="1.5s" fill="freeze"/>
+                    </text>
+                    <text x="150" y="0" text-anchor="middle" dominant-baseline="middle" opacity="0">Waning Crescent
+                        <animate id="text4" attributeName="opacity" values="0;1;1;0" begin="3.75s;text1Alt.begin+4.5s" dur="1.5s" fill="freeze"/>
+                    </text>
+                    <text x="150" y="0" text-anchor="middle" dominant-baseline="middle" opacity="0">New Moon
+                        <animate id="text5" attributeName="opacity" values="0;1;1;0" begin="5.25s;text1Alt.begin+6s" dur="1.5s" fill="freeze"/>
+                    </text>
+                    <text x="150" y="0" text-anchor="middle" dominant-baseline="middle" opacity="0">Waxing Crescent
+                        <animate id="text6" attributeName="opacity" values="0;1;1;0" begin="6.75s;text1Alt.begin+7.5s" dur="1.5s" fill="freeze"/>
+                    </text>
+                    <text x="150" y="0" text-anchor="middle" dominant-baseline="middle" opacity="0">Waxing Half
+                        <animate id="text7" attributeName="opacity" values="0;1;1;0" begin="8.25s;text1Alt.begin+9s" dur="1.5s" fill="freeze"/>
+                    </text>
+                    <text x="150" y="0" text-anchor="middle" dominant-baseline="middle" opacity="0">Waxing Gibbous
+                        <animate id="text8" attributeName="opacity" values="0;1;1;0" begin="9.75s;text1Alt.begin+10.5s" dur="1.5s" fill="freeze"/>
+                    </text>
+                    <text x="150" y="0" text-anchor="middle" dominant-baseline="middle" opacity="0">Full Moon
+                        <animate id="text1Alt" attributeName="opacity" values="0;1;1;0" dur="1.5s" begin="11.25s;text1Alt.begin+12s" fill="freeze"/>
+                    </text>
+                </g>
+            </svg>
+        </section>
+        <div id="footer">
+            <div id="footerContainer">
+                <div id="profilePic">
+                    <a href="https://www.sololearn.com/Profile/100073"><img id="theImg" src="https://blob.sololearn.com/avatars/3f731407-f00a-4256-87bb-c1730d8630fc.jpg"/></a> 
+                </div>
+                <div id="sig">
+                    <p><a href="https://www.sololearn.com/Profile/100073">Jay</a> &copy; 30/50 (2022). Follow me:&nbsp;</p>
+                </div>
+                <div id="logos">
+                    <a href="https://www.sololearn.com/Profile/100073"><img id="slImg" src="https://blob.sololearn.com/avatars/sololearn.png"/></a>
+                    <a href="https://codepen.io/JDawson"><img id="cpenImg" src="https://res.cloudinary.com/css-tricks/images/w_600,h_600,c_fill/f_auto,q_auto/v1637703540/Button-White-Large/Button-White-Large-png?_i=AA"/></a>
+                </div>
+            </div>
+        </div>
+        <script src="js/base.js"></script>
+    </body>
+</html>

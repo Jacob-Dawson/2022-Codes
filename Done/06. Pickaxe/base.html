@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/base.css">
+        <title>Pickaxe ⛏️</title>
+    </head>
+    <body>
+        <section id="mySection">
+            <svg id="mySVG" width="300" height="300">
+                <rect id="topBg" width="100%" height="60%" x="0" y="0" fill="skyblue"/>
+                <rect id="bottomBg" width="100%" height="40%" x="0" y="60%" fill="beige"/>
+                <g transform="translate(95,150) scale(0.75,0.75)" stroke="rgba(0,0,0,0.4)">
+                    <rect id="pickaxeHandle" x="0" y="0" width="20" height="180" rx="8" ry="8" fill="sienna" ></rect>
+                    <rect id="pickaxeHandleTop" x="2.5" y="-5" width="15" height="10" fill="sienna" rx="5" ry="5"></rect>
+                    <path id="pickaxeHead" d="M0,0 L10,0 C20,0 100,20 100,30 C100,30  30,20 10,20 L0,20 L-10,20 C-10,20 -30,20 -100,30 C-100,30 -100,20 -20,0 L-10,0 Z" fill="grey" transform="translate(12,0)"></path>
+                    <animateTransform id="swingAni" begin="0s;swingAni.end;" attributeName="transform" type="rotate" dur="1.25s" values="0 10 175; -45 10 175;55 10 175;0 10 175" additive="sum" fill="freeze" />
+                </g>
+                <g transform="translate(235,270) scale(1,1)" stroke="rgba(0,0,0,0.5)" fill="brown">
+                    <rect id="rock1" x="0" y="0" width="7.5" height="7.5" rx="4" ry="2">
+                        <animateTransform begin="swingAni.begin+0.8s;" dur="0.45s" attributeName="transform" type="translate" values="0,0;-5,-40" additive="sum"/> 
+                    </rect>
+                    <rect id="rock2" x="0" y="0" width="6.5" height="6.5" rx="1" ry="5">
+                        <animateTransform begin=" swingAni.begin+0.8s;" dur="0.45s" attributeName="transform" type="translate" values="0,0;-25,-40" additive="sum"/> 
+                    </rect>
+                    <rect id="rock3" x="0" y="0" width="7" height="7" rx="2" ry="3">
+                        <animateTransform begin="swingAni.begin+0.8s;" dur="0.45s" attributeName="transform" type="translate" values="0,0;-40,-40" additive="sum"/> 
+                    </rect>
+                    <rect id="rock4" x="0" y="0" width="7.5" height="7.5" rx="2" ry="4">
+                        <animateTransform begin="swingAni.begin+0.8s;" dur="0.45s" attributeName="transform" type="translate" values="0,0;-50,-25" additive="sum"/> 
+                    </rect>
+                    <rect id="rock5" x="0" y="0" width="6" height="6" rx="3" ry="3">
+                        <animateTransform begin="swingAni.begin+0.8s;" dur="0.45s" attributeName="transform" type="translate" values="0,0;-45,-0" additive="sum"/> 
+                    </rect>
+                </g>
+                <g transform="translate(250,260) scale(2.5,1)" stroke="rgba(0,0,0,0.5)">
+                    <path id="rock" d="M0,0 l0,-20 l4,10 l-2,-5 l10,4 l8,42 l-30,-0 -5,-10 Z" fill="brown"/>
+                </g>
+                
+            </svg>
+        </section>
+        <div id="footer">
+            <div id="footerContainer">
+                <div id="profilePic">
+                    <a href="https://www.sololearn.com/Profile/100073"><img id="theImg" src="https://blob.sololearn.com/avatars/3f731407-f00a-4256-87bb-c1730d8630fc.jpg"/></a>
+                </div>
+                <div id="sig">
+                    <p><a href="https://www.sololearn.com/Profile/100073">Jay</a> &copy; 6/50 (2022). Follow me:&nbsp;</p>
+                </div>
+                <div id="logos">
+                    <a href="https://www.sololearn.com/Profile/100073"><img id="slImg" src="https://blob.sololearn.com/avatars/sololearn.png"/></a>
+                    <a href="https://codepen.io/JDawson"><img id="cpenImg" src="https://res.cloudinary.com/css-tricks/images/w_600,h_600,c_fill/f_auto,q_auto/v1637703540/Button-White-Large/Button-White-Large-png?_i=AA"/></a>
+                </div>
+            </div>
+        </div>
+        <script src="js/base.js"></script>
+    </body>
+</html>

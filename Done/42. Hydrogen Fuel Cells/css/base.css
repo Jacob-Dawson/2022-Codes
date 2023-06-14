@@ -1,0 +1,672 @@
+body{
+
+    font-family: 'Arial';
+    padding: 0;
+    margin: 0;
+    background-color: rgb(241, 172, 172);
+
+}
+
+#mySection{
+
+    width: 100%;
+    height: calc(100vh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+}
+
+#placeholder{
+
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    overflow: hidden;
+
+}
+
+#transformer{
+
+    width: 35px;
+    height: 45px;
+    background-color: darkgray;
+    left: 100px;
+    top: 45px;
+    position: absolute;
+    border: 1px solid black;
+    box-sizing: border-box;
+
+}
+
+#wire{
+
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    top: 85px;
+    left: 0;
+    background-color: black;
+
+}
+
+.electricPulse{
+
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: yellow;
+
+}
+
+.electricPulse:nth-of-type(1){
+
+    left: 0;
+    animation: pulseAni 1.5s linear reverse infinite;
+    
+}
+
+.electricPulse:nth-of-type(2){
+
+    left: 0;
+    animation: pulseAni 1.5s 0.15s linear reverse infinite;
+    
+}
+
+
+#waterPipe{
+
+    position: absolute;
+    width: 20px;
+    height: 35px;
+    top: -5px;
+    left: 165px;
+    background-color: grey;
+    border: 1px solid black;
+    border-radius: 2px;
+
+}
+
+#electrolyzer{
+
+    position: absolute;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 80px;
+    height: 100px;
+    left: 135px;
+    top: 30px;
+
+}
+
+#waterPipeBottom{
+
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: calc(100% - 5px);
+    left: 0;
+    border-top: 1px solid black;
+
+}
+
+#oxygenSide{
+
+    position: absolute;
+    width: 50%;
+    height: 25px;
+    top: calc(100% - 25px);
+    left: 0;
+    background-color: cornflowerblue;
+
+}
+
+.oMolecules{
+
+    border-radius: 50%;
+    background-color: red;
+    top: 0;
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    animation: 2s separateOs ease-out reverse infinite;
+
+}
+
+.oMolecules:nth-of-type(1){
+
+    left: 10%;
+    top: 11%;
+
+}
+
+.oMolecules:nth-of-type(2){
+
+    left: 50%;
+    top: 23%;
+
+}
+
+.oMolecules:nth-of-type(3){
+
+    left: 80%;
+    top: 68%;
+
+}
+
+.oMolecules:nth-of-type(4){
+
+    left: 33%;
+    top: 92%;
+
+}
+
+.oMolecules:nth-of-type(5){
+
+    left: 67%;
+    top: 45%;
+
+}
+
+.oMolecules:nth-of-type(6){
+
+    left: 69%;
+    top: 91%;
+
+}
+
+.oMolecules:nth-of-type(7){
+
+    left: 85%;
+    top: 41%;
+
+}
+
+.oMolecules:nth-of-type(8){
+
+    left: 37%;
+    top: 76%;
+
+}
+
+.oMolecules:nth-of-type(9){
+
+    left: 20%;
+    top: 4%;
+
+}
+
+.oMolecules:nth-of-type(10){
+
+    left: 60%;
+    top: 27%;
+
+}
+
+#hydrogenSide{
+
+    position: absolute;
+    width: 50%;
+    height: 25px;
+    top: calc(100% - 25px);
+    left: 50%;
+    background-color: cyan;
+
+}
+
+.hMolecules{
+
+    border-radius: 50%;
+    background-color: green;
+    top: 0;
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    left: 10px;
+    animation: 2s separateHs ease-out reverse infinite;
+
+}
+
+.hMolecules:nth-of-type(1){
+
+    top: 4%;
+    left: 52%;
+
+}
+
+.hMolecules:nth-of-type(2){
+
+    top: 67%;
+    left: 32%;
+
+}
+.hMolecules:nth-of-type(3){
+
+    top: 31%;
+    left: 88%;
+
+}
+.hMolecules:nth-of-type(4){
+
+    top: 82%;
+    left: 25%;
+
+}
+.hMolecules:nth-of-type(5){
+
+    top: 70%;
+    left: 95%;
+
+}
+.hMolecules:nth-of-type(6){
+
+    top: 28%;
+    left: 17%;
+
+}
+.hMolecules:nth-of-type(7){
+
+    top: 62%;
+    left: 63%;
+
+}
+.hMolecules:nth-of-type(8){
+
+    top: 56%;
+    left: 51%;
+
+}
+.hMolecules:nth-of-type(9){
+
+    top: 38%;
+    left: 48%;
+
+}
+.hMolecules:nth-of-type(10){
+
+    top: 17%;
+    left: 13%;
+
+}
+
+#separator{
+
+    position: absolute;
+    left: calc(50% - 1px);
+    border-left: 2px dashed black;
+    box-sizing: border-box;
+    top: calc(100% - 50px);
+    height: 50px;
+    width: 1px;
+
+}
+
+#oText{
+
+    position: absolute;
+    left: calc(25% - 7.5px);
+    top: 30%;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+
+}
+
+#hText{
+
+    position: absolute;
+    left: calc(75% - 7.5px);
+    top: 30%;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+
+}
+
+#oText2{
+
+    position: absolute;
+    left: calc(25% + 1px);
+    top: calc(30% + 4px);
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 10px;
+
+}
+
+#hText2{
+
+    position: absolute;
+    left: calc(75% + 1px);
+    top: calc(30% + 4px);
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 10px;
+
+}
+
+#hPipe2{
+
+    position: absolute;
+    left: 215px;
+    height: 15px;
+    width: 60px;
+    top: 110px;
+    border-left: 1px solid cyan;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid grey;
+    background-color: grey;
+
+}
+
+#hPipe3{
+
+    position: absolute;
+    left: 235px;
+    height: 15px;
+    width: 40px;
+    top: 245px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid grey;
+    background-color: grey;
+
+}
+
+#hPipe1{
+
+    position: absolute;
+    left: 275px;
+    height: 150px;
+    width: 15px;
+    top: 110px;
+    border-radius: 0px 5px 5px 0px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: grey;
+
+}
+
+#hPipe4{
+
+    position: absolute;
+    left: 225px;
+    height: 13px;
+    width: 10px;
+    top: 245px;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background-color: silver;
+
+}
+
+#hBlocksPlatform{
+
+    background-color: black;
+    border-radius: 3px;
+    width: 120px;
+    height: 10px;
+    left: 40px;
+    top: 260px;
+    position: absolute;
+
+}
+
+.hBlock{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: aquamarine;
+    position: absolute;
+    border: 1px solid black;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+.hBlock:nth-of-type(1){
+
+    top: -35px;
+    left: 5px;
+
+}
+
+.hBlock:nth-of-type(2){
+
+    top: -35px;
+    left: 40px;
+
+}
+
+.hBlock:nth-of-type(3){
+
+    top: -35px;
+    left: 75px;
+
+}
+
+.hBlock:nth-of-type(4){
+
+    top: -70px;
+    left: 75px;
+
+}
+
+.hBlock:nth-of-type(5){
+
+    top: -70px;
+    left: 40px;
+
+}
+
+#selectedHBlockOutline{
+
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border: 1px solid black;
+    font-size: 48px;
+    box-sizing: border-box;
+    font-weight: bold;
+    left: 165px;
+    top: 210px;
+
+}
+
+#selectedHBlock{
+
+    width: 60px;
+    height: 0px;
+    position: absolute;
+    background-color: aquamarine;
+    font-size: 48px;
+    box-sizing: border-box;
+    font-weight: bold;
+    left: 165px;
+    top: 270px;
+    animation: fillCell 4s ease-out forwards infinite;
+
+}
+
+/* Animations */
+
+@keyframes fillCell {
+
+    0%{
+
+        top: 270px;
+        height: 0px;
+
+    }
+
+    100%{
+
+        top: 210px;
+        height: 60px;
+
+    }
+    
+}
+
+@keyframes separateOs {
+    
+    100%{
+
+        left: 100%;
+
+    }
+
+}
+
+@keyframes separateHs {
+    
+    100%{
+
+        left: 0%;
+
+    }
+
+}
+
+@keyframes pulseAni {
+
+    0%{
+
+        left: 100%;
+        opacity: 1;
+
+    }
+
+    25%{
+
+        opacity: 0.65;
+
+    }
+
+    50%{
+
+        opacity: 1;
+
+    }
+
+    75%{
+
+        opacity: 0.65;
+
+    }
+
+    100%{
+
+        left: 0%;
+        opacity: 1;
+
+    }
+    
+}
+
+/* footer / sig */
+
+#footer{
+
+    position: fixed;
+    width: 100%;
+    bottom:0;
+    height: 50px;
+    background-color: rgb(10,3,109);
+    box-sizing: border-box;
+    border-top: 3px solid rgb(104, 95, 224);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gold;
+    font-weight: bold;
+
+}
+
+#footerContainer{
+
+    width: auto;
+    height: 100%;
+    display: flex;
+
+}
+
+#profilePic{
+
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+
+}
+
+#theImg{
+
+    top: calc(50% - 15px);
+    position: absolute;
+    border-radius: 50%;
+    max-width: 30px;
+
+}
+
+#sig{
+
+    font-size: 13px;
+    letter-spacing: 0.75px;
+    top: calc(50% - 15px);
+    margin-top: 3px;
+
+}
+
+#sig > p > a{
+
+    color: gold;
+    text-decoration: none;
+
+}
+
+#slImg{
+
+    top: calc(50% - 15px);
+    position: relative;
+    border-radius: 50%;
+    max-width: 30px;
+
+}
+
+#cpenImg{
+
+    top: calc(50% - 15px);
+    position: absolute;
+    border-radius: 50%;
+    max-width: 30px;
+
+}

@@ -1,0 +1,560 @@
+body{
+
+    font-family: 'Arial';
+    padding: 0;
+    margin: 0;
+    background-color: white;
+
+}
+
+#bg{
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+#topBg{
+
+    width: 100%;
+    height: 25%;
+    background-color: skyblue;
+
+}
+
+#bottomBg{
+
+    width: 100%;
+    height: 75%;
+    background-color: green;
+
+}
+
+section{
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 50px);
+
+}
+
+#placeholder{
+
+    width: 300px;
+    height: 300px;
+    position: absolute;
+
+}
+
+#backgroundBase{
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+#mountains > div{
+
+    position: absolute;
+
+}
+
+#mountains > div:nth-of-type(1){
+
+    width: 5px;
+    padding: 0px;
+    border-bottom: 100px gray solid;
+    border-right: 100px transparent solid;
+    border-left: 100px transparent solid;
+    height: 10px;
+
+}
+
+#mountains > div:nth-of-type(2){
+
+    width: 5px;
+    transform: translate(100px,10px);
+    padding: 0px;
+    border-bottom: 85px gray solid;
+    border-right: 85px transparent solid;
+    border-left: 85px transparent solid;
+    height: 10px;
+
+}
+
+#mountains > div:nth-of-type(1) > div{
+
+    width: 5px;
+    padding: 0px;
+    transform: translate(-25px,0px);
+    border-bottom: 25px white solid;
+    border-right: 25px transparent solid;
+    border-left: 25px transparent solid;
+    height: 11px;
+
+}
+
+#mountains > div:nth-of-type(2) > div{
+
+    width: 5px;
+    transform: translate(-15px,0px);
+    padding: 0px;
+    border-bottom: 15px white solid;
+    border-right: 15px transparent solid;
+    border-left: 15px transparent solid;
+    height: 11px;
+
+}
+
+#plantBase{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+#mainBuilding{
+
+    width: 100px;
+    height: 45px;
+    background-color: gray;
+    position: absolute;
+    left: calc(50% - 70px);
+    top: calc(50% + 45px);
+
+}
+
+.window{
+
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    opacity: 0.65;
+
+}
+
+.window:nth-of-type(1){
+
+    left: 5px;
+    top: 5px;
+
+}
+
+.window:nth-of-type(2){
+
+    left: 30px;
+    top: 5px;
+
+}
+
+.window:nth-of-type(3){
+
+    left: 55px;
+    top: 5px;
+
+}
+
+.window:nth-of-type(4){
+
+    left: 80px;
+    top: 5px;
+
+}
+
+.window:nth-of-type(5){
+
+    left: 5px;
+    top: 25px;
+
+}
+
+.window:nth-of-type(6){
+
+    left: 30px;
+    top: 25px;
+
+}
+
+.window:nth-of-type(7){
+
+    left: 55px;
+    top: 25px;
+
+}
+
+.window:nth-of-type(8){
+
+    left: 80px;
+    top: 25px;
+
+}
+
+#chimneys{
+
+    position: absolute;
+
+}
+
+#chimneys > div{
+
+    left: 200px;
+    top: 150px;
+    position: absolute;
+
+}
+
+#chimneys > div > div{
+
+    position: absolute;
+
+}
+
+#chimneys > div:nth-child(1){
+
+    transform: translate(30px,-5px) scale(0.8,0.8);
+
+}
+
+#chimneys > div > div:nth-child(1){
+
+    width: 25px;
+    height: 10px;
+    background-color: grey;
+
+}
+
+#chimneys > div > div:nth-child(2){
+
+    top: 10px;
+    left: 5px;
+    width: 15px;
+    height: 60px;
+    background-color: grey;
+
+}
+
+#chimneys > div > div:nth-child(3){
+
+    top: 60px;
+    left: 0px;
+    width: 25px;
+    height: 30px;
+    border-radius: 50% 50% 0% 0%;
+    background-color: grey;
+
+}
+
+#chimneySmokeContainer{
+
+    left: 200px;
+    top: 150px;
+    position: absolute;
+
+}
+
+.chimneySmoke{
+
+    position: absolute;
+    background-color: rgb(214, 214, 214);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+
+}
+
+.chimneySmoke:nth-of-type(1){
+
+    animation: smoke 1.5s linear infinite;
+    left: 5px;
+
+}
+
+.chimneySmoke:nth-of-type(2){
+
+    animation: smoke 1.5s 0.15s linear infinite;
+    left: 0px;
+    top: -5px;
+
+}
+
+.chimneySmoke:nth-of-type(3){
+
+    animation: smoke 1.5s 0.3s linear infinite;
+    left: 2.5px;
+    top: 2.5px;
+
+}
+
+.chimneySmoke:nth-of-type(4){
+
+    animation: smoke 1.5s 0.45s linear infinite;
+    left: 5px;
+
+}
+
+.chimneySmoke:nth-of-type(5){
+
+    animation: smoke 1.5s 0.6s linear infinite;
+    left: 0px;
+    top: -5px;
+
+}
+
+.chimneySmoke:nth-of-type(6){
+
+    animation: smoke 1.5s 0.75s linear infinite;
+    left: 2.5px;
+    top: 2.5px;
+
+}
+
+.chimneySmoke:nth-of-type(7){
+
+    animation: smoke 1.5s 0.9s linear infinite;
+    left: 5px;
+
+}
+
+.chimneySmoke:nth-of-type(8){
+
+    animation: smoke 1.5s 1.05s linear infinite;
+    left: 0px;
+    top: -5px;
+
+}
+
+.chimneySmoke:nth-of-type(9){
+
+    animation: smoke 1.5s 1.2s linear infinite;
+    left: 2.5px;
+    top: 2.5px;
+
+}
+
+.chimneySmoke:nth-of-type(10){
+
+    animation: smoke 1.5s 1.35s linear infinite;
+    left: 5px;
+
+}
+
+.chimneySmoke:nth-of-type(11){
+
+    animation: smoke2 1.5s linear infinite;
+    left: 5px;
+    transform: translate(20px,-5px);
+
+}
+
+.chimneySmoke:nth-of-type(12){
+
+    animation: smoke2 1.5s 0.15s linear infinite;
+    left: 0px;
+    top: -5px;
+
+}
+
+.chimneySmoke:nth-of-type(13){
+
+    animation: smoke2 1.5s 0.3s linear infinite;
+    left: 2.5px;
+    top: 2.5px;
+
+}
+
+.chimneySmoke:nth-of-type(14){
+
+    animation: smoke2 1.5s 0.45s linear infinite;
+    left: 5px;
+
+}
+
+.chimneySmoke:nth-of-type(15){
+
+    animation: smoke2 1.5s 0.6s linear infinite;
+    left: 0px;
+    top: -5px;
+
+}
+
+.chimneySmoke:nth-of-type(16){
+
+    animation: smoke2 1.5s 0.75s linear infinite;
+    left: 2.5px;
+    top: 2.5px;
+
+}
+
+.chimneySmoke:nth-of-type(17){
+
+    animation: smoke2 1.5s 0.9s linear infinite;
+    left: 5px;
+
+}
+
+.chimneySmoke:nth-of-type(18){
+
+    animation: smoke2 1.5s 1.05s linear infinite;
+    left: 0px;
+    top: -5px;
+
+}
+
+.chimneySmoke:nth-of-type(19){
+
+    animation: smoke2 1.5s 1.2s linear infinite;
+    left: 2.5px;
+    top: 2.5px;
+
+}
+
+.chimneySmoke:nth-of-type(20){
+
+    animation: smoke2 1.5s 1.35s linear infinite;
+    left: 5px;
+
+}
+
+#connector1{
+
+    width: 30px;
+    top: 35px;
+    left: 100%;
+    position: absolute;
+    height: 10px;
+    background-color: rgb(80, 80, 80);
+
+}
+
+#connector2{
+
+    width: 30px;
+    top: 35px;
+    left: calc(100% + 40px);
+    position: absolute;
+    height: 10px;
+    background-color: rgb(80, 80, 80);
+    transform-origin: 0% 50%;
+    transform: rotate(-45deg);
+
+}
+
+/* -- Animations --*/
+
+@keyframes smoke {
+
+    0%{
+
+        transform: translate(0px,0px);
+
+    }
+
+    100%{
+
+        transform: translate(-50px,-30px);
+
+    }
+    
+}
+
+@keyframes smoke2 {
+
+    0%{
+
+        transform: translate(20px,-15px) scale(0.9);
+
+    }
+
+    100%{
+
+        transform: translate(-30px,-45px) scale(0.9);
+
+    }
+    
+}
+
+/* footer / sig */
+
+#footer{
+
+    position: fixed;
+    width: 100%;
+    bottom:0;
+    height: 50px;
+    background-color: rgb(10,3,109);
+    box-sizing: border-box;
+    border-top: 3px solid rgb(104, 95, 224);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gold;
+    font-weight: bold;
+
+}
+
+#footerContainer{
+
+    width: auto;
+    height: 100%;
+    display: flex;
+
+}
+
+#profilePic{
+
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+
+}
+
+#theImg{
+
+    top: calc(50% - 15px);
+    position: absolute;
+    border-radius: 50%;
+    max-width: 30px;
+
+}
+
+#sig{
+
+    font-size: 13px;
+    letter-spacing: 0.75px;
+    top: calc(50% - 15px);
+    margin-top: 3px;
+
+}
+
+#sig > p > a{
+
+    color: gold;
+    text-decoration: none;
+
+}
+
+#slImg{
+
+    top: calc(50% - 15px);
+    position: relative;
+    border-radius: 50%;
+    max-width: 30px;
+
+}
+
+#cpenImg{
+
+    top: calc(50% - 15px);
+    position: absolute;
+    border-radius: 50%;
+    max-width: 30px;
+
+}

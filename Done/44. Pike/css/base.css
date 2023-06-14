@@ -1,0 +1,586 @@
+body{
+
+    font-family: 'Arial';
+    padding: 0;
+    margin: 0;
+    background-color: rgb(218, 216, 107);
+
+}
+
+#mySection{
+
+    width: 100%;
+    height: calc(100vh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#placeholder{
+
+    position: absolute;
+    width: 300px;
+    height: 300px;    
+
+}
+
+#placeholder div{
+
+    position: absolute;
+
+}
+
+/* Spear */
+
+#spear{
+
+    width: 100%;
+    height: 100%;
+    transform: translate(-10px,10px) rotate(45deg);
+    
+}
+
+#spearTop{
+
+    left: calc(50% - 10px);
+    top: 22px;
+
+}
+
+#spearTopTop{
+
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 45px solid black;
+    
+
+}
+
+#spearTopTopB{
+
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 45px solid grey;
+    transform: scale(0.9);
+    top: 2px;
+    transform-origin: 50% 50%;
+
+}
+
+#spearTopBottom{
+
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid black;
+    top: 45px;
+
+}
+
+#spearTopBottomB{
+
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid grey;
+    transform: scale(0.9);
+    top: 43px;
+    transform-origin: 50% 50%;
+
+}
+
+#spearTopSide{
+
+    width: 2px;
+    box-sizing: border-box;
+    background-color: black;
+    height: 65px;
+    left: 9px;
+    top: 5px;
+
+}
+
+#spearMid{
+
+    left: calc(50% - 0.5px);
+
+}
+
+#spearMidBottom{
+
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid black;
+    left: -10px;
+    top: 100px;
+
+}
+
+#spearMidBottomB{
+
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid goldenrod;
+    left: -10px;
+    top: 100px;
+    transform: scale(0.9);
+    transform-origin: 50% 50%;
+
+}
+
+#spearMidMid{
+
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    background-color: goldenrod;
+    left: -7.5px;
+    top: 95px;
+    border-radius: 50%;
+    box-sizing: border-box;
+
+}
+
+#spearMidTop{
+
+    width: 7.5px;
+    height: 20px;
+    left: -3.25px;
+    top: 80px;
+    border: 1px solid black;
+    background-color: goldenrod;
+    box-sizing: border-box;
+
+}
+
+#spearShaft{
+
+    width: 10px;
+    height: 180px;
+    background-color: grey;
+    left: calc(50% - 5px);
+    bottom: 0px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 0px 0px 10px 10px;
+
+}
+
+/* Lance: */
+
+#lance{
+
+    width: 100%;
+    height: 100%;
+    display: none;
+
+}
+
+#lanceTop{
+
+    left: calc(50%);
+    top: 10px;
+
+}
+
+#lanceTopBase{
+
+    width: 0;
+    height: 0;
+    top: 0px;
+    left: -12.5px;
+    border-left: 12.5px solid transparent;
+    border-right: 12.5px solid transparent;
+    border-bottom: 195px solid purple;
+
+}
+
+#lanceTip{
+
+    width: 0;
+    height: 0;
+    top: 0px;
+    left: -6px;
+    border-left: 6.25px solid transparent;
+    border-right: 6.25px solid transparent;
+    border-bottom: 90px solid rgba(0,0,255,0.3);
+
+}
+
+
+#lanceTopBottom{
+
+    border-bottom: 10px solid purple;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    height: 0;
+    width: 25px;
+    left: -17.5px;
+    top: 195px;
+
+}
+
+#lanceTopBottomDec{
+
+    width: 35px;
+    height: 2.5px;
+    top: 205px;
+    left: -17.5px;
+    background-color: goldenrod;
+
+}
+
+#lanceMid{
+
+    left: calc(50%);
+    top: 247.5px;
+
+}
+
+#lanceHandleTop{
+
+    left: -10px;
+    background-color: rgb(156, 123, 39);
+    top: -30px;
+    height: 5px;
+    width: 20px;
+
+}
+
+#lanceHandleMid{
+
+    left: -2px;
+    background-color: rgb(156, 123, 39);
+    top: -25px;
+    width: 4px;
+    height: 20px;
+
+}
+
+#lanceHandleBottom{
+
+    left: -10px;
+    background-color: rgb(156, 123, 39);
+    top: -5px;
+    height: 5px;
+    width: 20px;
+
+}
+
+#lanceBottom{
+
+    left: calc(50%);
+    top: 250px;
+
+}
+
+#lanceBottomBase{
+
+    border-top: 20px solid purple;
+    border-left: 7.5px solid transparent;
+    border-right: 7.5px solid transparent;
+    height: 0;
+    width: 15px;
+    left: -15px;
+
+}
+
+#lanceBottomDec{
+
+    width: 30px;
+    height: 2.5px;
+    top: -2.5px;
+    left: -15px;
+    background-color: goldenrod;
+
+}
+
+/* Pike: */
+
+#pike{
+
+    width: 100%;
+    height: 100%;
+    display: none;
+
+}
+
+#pikeTop{
+
+    left: 50%;
+    top: 15px;
+
+}
+
+#pikeTopSpike{
+
+    left: -10px;
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 55px solid silver;
+
+}
+
+.pikeSideSpike{
+
+    left: -8px;
+    top: 15px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 24px solid silver;
+    transform-origin: 50% 100%;
+
+}
+
+.pikeSideSpike:nth-of-type(1){
+
+    transform: translate(0px,0px) rotate(60deg);
+
+}
+
+.pikeSideSpike:nth-of-type(2){
+
+    transform: translate(0px,0px) rotate(-60deg);
+
+}
+
+#pikeTopLine{
+
+    width: 2px;
+    left: -1px;
+    height: 50px;
+    top: 0px;
+    background-color: grey;
+
+}
+
+#pikeTopConnector{
+
+    left: -5px;
+    height: 15px;
+    width: 10px;
+    background-color: silver;
+    border-radius: 0px 0px 2px 2px;
+    top: 36px;
+
+}
+
+#pikeMid{
+
+    left: 50%;
+    top: 65px;
+
+}
+
+#pikeShaft{
+
+    width: 8px;
+    left: -4px;
+    height: 220px;
+    background-color: brown;
+
+}
+
+#pikeMidConnector{
+
+    width: 10px;
+    left: -5px;
+    height: 15px;
+    background-color: silver;
+    border-radius: 2px;
+    top: 60px;
+
+}
+
+#pikeBottom{
+
+    left: 50%;
+    top: 285px;
+
+}
+
+#pikeStub{
+
+    width: 10px;
+    height: 10px;
+    left: -5px;
+    background-color: silver;
+    border-radius: 0px 0px 2px 2px;
+
+}
+
+/* -- */
+
+#buttonArea{
+
+    position: absolute;
+    width: 300px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: calc(50% + 125px);
+
+}
+
+#buttonArea > button{
+
+    width: 33%;
+    height: 100%;
+    color: white;
+    margin: 0;
+    padding: 0;
+
+}
+
+#pikeButton{
+
+    background-color: red;
+    border-radius: 0px 10px 10px 0px;
+
+}
+
+#lanceButton{
+
+    background-color: purple;
+
+}
+
+#spearButton{
+
+    background-color: blue;
+    border-radius: 10px 0px 0px 10px;
+
+}
+
+/* -- */
+
+@keyframes wepShove{
+
+    0%{
+
+        transform: translate(0px,0px) rotate(0deg);
+
+    }
+
+    50%{
+
+        transform: translate(-10px,10px) rotate(45deg);
+
+    }
+
+    75%{
+
+        transform: translate(-20px,20px) rotate(45deg);
+
+    }
+
+    90%{
+
+        transform: translate(30px,-30px) rotate(45deg);
+
+    }
+
+    100%{
+
+        transform: translate(10px,-10px) rotate(45deg);
+
+    }
+
+}
+
+
+/* footer / sig */
+
+#footer{
+
+    position: fixed;
+    width: 100%;
+    bottom:0;
+    height: 50px;
+    background-color: rgb(10,3,109);
+    box-sizing: border-box;
+    border-top: 3px solid rgb(104, 95, 224);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gold;
+    font-weight: bold;
+
+}
+
+#footerContainer{
+
+    width: auto;
+    height: 100%;
+    display: flex;
+
+}
+
+#profilePic{
+
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+
+}
+
+#theImg{
+
+    top: calc(50% - 15px);
+    position: absolute;
+    border-radius: 50%;
+    max-width: 30px;
+
+}
+
+#sig{
+
+    font-size: 13px;
+    letter-spacing: 0.75px;
+    top: calc(50% - 15px);
+    margin-top: 3px;
+
+}
+
+#sig > p > a{
+
+    color: gold;
+    text-decoration: none;
+
+}
+
+#slImg{
+
+    top: calc(50% - 15px);
+    position: relative;
+    border-radius: 50%;
+    max-width: 30px;
+
+}
+
+#cpenImg{
+
+    top: calc(50% - 15px);
+    position: absolute;
+    border-radius: 50%;
+    max-width: 30px;
+
+}
